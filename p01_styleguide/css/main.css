@@ -1,0 +1,270 @@
+/*
+	Please leave the content below alone for this week's tutorial
+*/
+body {
+	font-family: "champagne__limousines";
+	margin: 1.2rem;
+	font-size: 1.25rem;
+  margin: 2rem;
+
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+  margin-top:0.2rem;
+	color: #ef7e93;/*pink*/
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 0.8rem;
+	width: 100%;
+	color:#ef7e93;/*pink*/
+  border: 1px solid #ef7e93;
+  padding:1rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	color:#a3cf83;/*green*/
+}
+
+h4 {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+  margin-top:0.8rem;
+	color:#ff8f29;/*orange*/
+}
+
+h5 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+  margin-top:0.8rem;
+	color:black;
+  font-weight: bold;
+}
+
+p{
+  margin-top:0.2rem;
+}
+h2, p,code,ol{
+	max-width: 30rem;
+}
+
+p.other_pages{
+  text-align: center;
+}
+
+ul {
+    color: black;
+    list-style-type:none;
+}
+
+.bullet_list li::before{ /**code of colored bullet points retrived from http://geniuscarrier.com/3-ways-to-change-the-color-of-dot-in-an-unordered-list/**/
+	content: '\25CF';
+	color: #a3cf83;/*green*/
+	padding-right: 0.5rem;
+}
+
+.numbered_list{
+  list-style-type: none;
+}
+.numbered_list li{/* codes of colored numbered list retrieved from https://stackoverflow.com/questions/488830/ol-with-numbers-another-color*/
+  counter-increment: item;
+}
+.numbered_list li::before{
+  content: counter(item) ". ";
+  color: #a3cf83;/*green*/
+	padding-right: 0.5rem;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+a {
+	color: rgb(200,0,0);
+	transition: color 0.5s;
+}
+
+/*a:active, a:hover, a:focus {
+	color: rgb(50,0,0);
+	text-decoration: none;
+}*/
+
+a.back_button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border: 2px solid #ef7e93;/*pink*/
+}
+a.back_button:hover {
+    background-color: #ef7e93;/*pink*/
+    color: white;
+}
+
+a.intext_link{
+  color: #a3cf83;
+	text-decoration: underline;
+}
+.intext_link:active, .intext_link:hover, .intext_link:focus {
+	color: #ef7e93;
+	text-decoration: underline;
+}
+
+.products li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #fdf7e6;
+}
+
+.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
+    background:#a3cf83;
+}
+
+a.product_link {
+	color: #ef7e93;
+  font-weight: bolder;
+	transition: color 0.5s;
+  text-decoration: none;
+}
+
+a.product_link:active, a:hover, a:focus {
+	color: white;
+	text-decoration:none;
+
+}
+
+code, samp {
+	display: block;
+	background-color:#fdf7e6;
+	padding: 0.8rem;
+}
+
+.submit_button{/*code from lab exercise*/
+border-color:#ef7e93;
+border-style:solid;
+background-color: white;
+border-radius: 0.3rem;
+color:#ef7e93;
+border-width: 0.15rem;
+padding: 0.25rem 0.75rem;
+margin-top:5rem;
+}
+
+.submit_button:hover, .buttonfocus {
+  background-color:#ef7e93;
+  color:white;
+}
+
+form {
+  color:#ef7e93;
+  border-color: #ef7e93;
+}
+
+input{/*form style code retrived from https://www.w3schools.com/css/css_form.asp*/
+  font-size: 0.8rem;
+  color: #606060;
+  border: 1px solid #ef7e93;
+  padding:0.3rem;
+}
+
+.header_samples {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 0.8rem;
+  max-width: 40rem;
+}
+
+.color{/*codes of color swatches retrieved from https://stackoverflow.com/questions/11226126/how-can-i-create-a-small-color-box-using-html-and-css/11226586*/
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  padding:1rem;
+  text-align: center;
+  font-weight:bold;
+
+
+}
+
+.light_pink {
+  background: #f6cac6;
+  color: white;
+
+}
+.light_yellow {
+  background: #fdf7e6;
+  color: #bcbcbc;
+}
+
+.yellow {
+  background: #fae192;
+  color: white;
+}
+
+.pink {
+  background: #ef7e93;
+  color: white;
+}
+.orange {
+  background: #ff8f29;
+  color: white;
+}
+.green {
+  background: #a3cf83;
+  color: white;
+}
+
+.nav-main-item {
+	display:block;
+	color: white;
+	/*background-color: rgb(250,100,75);*/
+	color:#a3cf83;
+	font-size: 1.3rem;
+	margin:1.5rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: #ef7e93;
+	text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
+}
+
+
+
+.container .block {
+
+  background-color: orange;
+  margin:0.5rem;
+  }
+
+.row{
+  background: #ef7e93;
+  margin: 2rem;
+  padding:1rem;
+}
+
+.column{
+  display: inline-block;
+  background: #fdf7e6;
+  margin: 0.2rem;
+  width:190px;
+  height:220px;
+  padding:1rem;
+}

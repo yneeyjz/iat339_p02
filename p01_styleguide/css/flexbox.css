@@ -1,0 +1,30 @@
+.box{/*flexbox code from week 3 tutorial exercise*/
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content:space-around;
+  margin: 2rem;
+
+}
+
+
+.left_sidebar{
+ flex: 1 1 15em;
+}
+
+.main{
+ flex: 30 1 15em;
+}
+
+.box-interactive{
+ flex: 2 1 15em;
+}
+
+.box-textstyling{
+ flex: 2 1 15em;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'champagne__limousines';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/champagne__limousines-webfont.woff2') format('woff2'),
+         url('../fonts/champagne__limousines-webfont.woff') format('woff');
+
+
+}

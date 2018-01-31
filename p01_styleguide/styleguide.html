@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+  <title>Style Guide</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+
+</head>
+
+<body>
+
+  <h1>Style Guide for<br>Homie Handcraft House</h1>
+
+  <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
+
+
+  <nav class="nav-main box">
+
+    <a href="#interactive_elements" class="nav-main-item box-item-nav">INTERACTIVE ELEMENTS</a>
+    <a href="#text_elements" class="nav-main-item box-item-nav">TEXT STYLING</a>
+    <a href="#combined_elements" class="nav-main-item box-item-nav">COMBINED ELEMENTS</a>
+  </nav>
+
+  <p>Other pages:
+    <a href="wireframe.html">Wireframes</a>
+    <a href="citation.html">Citations</a>
+  </p>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <div class="box">
+    <div class="box-interactive">
+      <section id="interactive_elements">
+
+        <h2>Interactive Elements</h2>
+
+        <section>
+          <h3>In-text link</h3>
+          <h4>CSS selector:</h4>
+          <p>.intext_link</p>
+
+          <h4>Rendered elements:</h4>
+          <a href="" class="intext_link">In-text Link</a>
+
+
+
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a href="" class="intext_link"&gt;In-text Link&lt;/a&gt;
+            <br>
+            CSS:<br>
+
+            a.intext_link&#123;<br>
+            color: #a3cf83;<br>
+            text-decoration: underline;<br>
+            &#125;<br>
+
+            .intext_link:active, .intext_link:hover, .intext_link:focus &#123;<br>
+            color: #ef7e93;<br>
+            text-decoration: underline;<br>
+            &#125;<br>
+
+          </code>
+
+        </section>
+
+        <h3>Navigation button style</h3>
+        <h4>CSS selector:</h4>
+        <p>.back_button (go to previous page)</p>
+
+        <h4>Rendered elements:</h4><!-- navigation button code retrieved from https://www.w3schools.com/howto/howto_css_next_prev.asp-->
+        <a href="#" class="back_button">&#8249;</a>
+
+        <h4>Sample code:</h4>
+        <code>
+
+          &lt;a href="#" class="back_button"&gt; &#8249; &lt;/a&gt;<br>
+
+          CSS:<br>
+          a.back_button &#123;<br>
+          text-decoration: none;<br>
+          display: inline-block;<br>
+          padding: 8px 16px;<br>
+          font-size: 1.5rem;<br>
+          border: 2px solid #ef7e93;<br>
+          &#125;<br>
+          a.back_button:hover &#123;<br>
+          background-color: #ef7e93;/*pink*/<br>
+          color: white;<br>
+          &#125;<br>
+        </code>
+
+      </section>
+
+      <section>
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.submit_button</p>
+
+        <h4>Rendered elements:</h4>
+        <a class="submit_button">Submit</a>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="button"&gt;Submit&lt;/a&gt;
+          <br>
+          <br>
+          CSS:<br>
+          .submit_button&#123;<br>
+          border-color:#ef7e93;<br>
+          border-style:solid;<br>
+          background-color: white;<br>
+          border-radius: 0.3rem;<br>
+          color:#ef7e93;<br>
+          border-width: 0.15rem;<br>
+          padding: 0.25rem 0.75rem;<br>
+          margin-top:5rem;<br>
+          &#125;<br>
+          <br>
+          .submit_button:hover, .buttonfocus &#123;<br>
+          background-color:#ef7e93;<br>
+          color:white;<br>
+          &#125;<br>
+
+        </code>
+
+      </section>
+
+      <section>
+        <h3>Text Input Field</h3>
+        <h4>CSS selector:</h4>
+        <p>form input</p>
+
+        <h4>Rendered element</h4>
+        <form>
+          First name:<br>
+          <input type="text" name="firstname" placeholder="name"><br>
+          Last name:<br>
+          <input type="password" name="lastname" placeholder="password">
+        </form>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;<br>
+          First name: &lt;br&gt; <br>
+          &lt;input type="text" name="firstname" placeholder="name"&gt; &lt;br&gt;<br>
+          Last name: &lt;br&gt;<br>
+          &lt;input type="password" name="password" placeholder="password"&gt;
+          &lt;/form&gt;<br>
+          <br>
+          CSS<br>
+          form &#123;<br>
+          color:#ef7e93;<br>
+          border-color: #ef7e93;<br>
+          &#125;<br>
+          <br>
+          input&#123;<br>
+          font-size: 0.8rem;<br>
+          color: #606060;<br>
+          border: 1px solid #ef7e93;<br>
+          padding:0.3rem;<br>
+          &#125;<br>
+        </code>
+
+      </section>
+
+  </div>
+
+
+
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <div class="box-textstyling">
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+      <section>
+        <h3>Headings</h3>
+        <h4>CSS selectors:</h4>
+        <p>
+          h1<br>
+          h2<br>
+          h3<br>
+          h4<br>
+        </p>
+
+        <h4>Rendered elements</h4>
+        <section class="header_samples">
+          <h1>First Level Header</h1><!--h1 was repeated so there is a warning-->
+          <h2>Second Level Header</h2>
+          <h3>Third Level Header</h3>
+          <h4>Fourth Level Header</h4>
+        </section>
+
+        <h4>Sample codes:</h4>
+        <code>
+          &lt;h1&gt;First Level Header&lt;/h1&gt;<br>
+          &lt;h2&gt;Second Level Header&lt;/h2&gt;<br>
+          &lt;h3&gt;Third Level Header&lt;/h3&gt;<br>
+          &lt;h4&gt;Fourth Level Header&lt;/h4&gt;<br>
+          <br>
+          CSS:<br>
+          h1 &#123;<br>
+          font-size: 3rem;
+          margin-bottom: 0;
+          margin-top:0.2rem;
+          color: #ef7e93;/*pink*/
+          &#125;<br>
+
+          h2 &#123;<br>
+          font-size: 2rem;
+          margin-bottom: 0.8rem;
+          width: 100%;
+          color:#ef7e93;/*pink*/
+          border: 1px solid #ef7e93;
+          padding:1rem;
+          &#125;<br>
+
+          h3 &#123;<br>
+          font-size: 1.5rem;
+          margin-bottom: 0;
+          color:#a3cf83;/*green*/
+          &#125;<br>
+
+          h4 &#123;<br>
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+          margin-top:0.8rem;
+          color:#ff8f29;/*orange*/
+          &#125;<br>
+        </code>
+
+      </section>
+
+      <section>
+        <h3>Paragraphs</h3>
+        <h4>CSS selectors:</h4>
+        <p>.p</p>
+
+        <h4>Rendered element</h4>
+        <p>This is a paragraph.</p>
+
+        <h4>Sample codes:</h4>
+        <code>
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        </code>
+      </section>
+
+      <section>
+        <h3>Bulleted Lists</h3>
+        <h4>CSS selectors:</h4>
+        <p>.bullet_list</p>
+
+        <h4>Rendered element</h4>
+
+        <ul class="bullet_list">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+
+
+        <h4>Sample codes:</h4>
+        <code>
+          &lt;ul&gt;<br>
+          &lt;li&gt;item 1&lt;/li&gt;<br>
+          &lt;li&gt;item 2&lt;/li&gt;<br>
+          &lt;li&gt;item 3&lt;/li&gt;<br>
+          &lt;/ul&gt;
+          <br>
+          CSS:<br>
+          ul &#123;<br>
+          color: black;<br>
+          list-style-type:none;<br>
+          &#125;<br>
+
+          .bullet_list li::before&#123;<br>
+          content: '\25CF';<br>
+          color: #a3cf83;/*green*/<br>
+          padding-right: 0.5rem;<br>
+          &#125;<br>
+        </code>
+      </section>
+
+      <section>
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.numbered_list</p>
+
+        <h4>Rendered element</h4>
+        <ol class="numbered_list">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ol>
+
+
+        <h4>Sample codes:</h4>
+        <code>
+          &lt;ol&gt;<br>
+          &lt;li&gt;item 1&lt;/li&gt;<br>
+          &lt;li&gt;item 2&lt;/li&gt;<br>
+          &lt;li&gt;item 3&lt;/li&gt;<br>
+          &lt;/ol&gt;<br>
+          CSS:<br>
+          .numbered_list&#123;<br>
+          list-style-type: none;
+          &#125;<br>
+          .numbered_list li&#123;<br>
+          counter-increment: item;
+          &#125;<br>
+          .numbered_list li::before&#123;<br>
+          content: counter(item) ". ";
+          color: #a3cf83;/*green*/
+          padding-right: 0.5rem;
+          &#125;<br>
+        </code>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+  </div>
+</div>
+
+<!-- COMBINED ELEMENTS SECTION // -->
+<section id="combined_elements">
+  <h2>Combined Elements</h2>
+  <section>
+    <h3>Main Navigation</h3>
+
+    <h4>CSS selectors:</h4>
+    <p>.nav_main</p>
+
+    <h4>Rendered elements</h4>
+    <div class=" box">
+
+      <a href="#menu" class="nav-main-item box-item-nav">MENU</a>
+      <a href="#deals" class="nav-main-item box-item-nav">DEALS</a>
+      <a href="#giftbox" class="nav-main-item box-item-nav">GIFTBOX</a>
+      <a href="#recipes" class="nav-main-item box-item-nav">RECIPES</a>
+    </div>
+
+    <h4>Sample codes:</h4>
+    <code>
+      &lt;nav class="nav_main"&gt;<br>
+      &lt;a href="#menu" class="nav-main-item box-item-nav"&gt;MENU&lt;/a&gt;<br>
+      &lt;a href="#deals" class="nav-main-item box-item-nav"&gt;DEALS&lt;/a&gt;<br>
+      &lt;a href="#giftbox" class="nav-main-item box-item-nav"&gt;GIFTBOX&lt;/a&gt;<br>
+      &lt;a href="#recipes" class="nav-main-item box-item-nav"&gt;RECIPES&lt;/a&gt;<br>
+      &lt;/nav&gt;<br>
+
+      CSS:<br>
+      .nav-main-item &#123;<br>
+      display:block;<br>
+      color: white;<br>
+      color:#a3cf83;<br>
+      font-size: 1.3rem;<br>
+      margin:1.5rem;<br>
+      text-decoration: none;<br>
+      transition: background-color 0.5s ease-out;<br>
+      &#125;<br>
+
+
+      .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus &#123;<br>
+      color: #ef7e93;<br>
+      text-decoration: underline;<br>
+      &#125;<br>
+
+    </code>
+
+    <section>
+      <h3>Product Listing</h3>
+      <h4>CSS selector:</h4>
+      <p>.products ul .product_link li</p>
+      <ul class="products"><!--codes from http://blog.teamtreehouse.com/using-inline-block-to-display-a-product-grid-view-->
+        <li>
+          <a href="#" class="product_link">
+            <img src="img/penne.jpg" alt="">>
+            <h5>Penne Pasta</h5>
+            <p>500g | $5.95</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="product_link">
+            <img src="img/rotini.jpg" alt="">>
+            <h5>Rotini Pasta</h5>
+            <p>500g | $5.95</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="product_link">
+            <img src="img/fusilli.jpg" alt="">
+            <h5>Fusilli Pasta</h5>
+            <p>500g | $5.95</p>
+          </a>
+        </li>
+      </ul>
+      <h4>Sameple code:</h4>
+      <code>
+        &lt;ul class="products"&gt;<br>
+        &lt;li&gt;<br>
+        &lt;a href="#" class="product_link"&gt;<br>
+        &lt;img src="img/penne.jpg" alt="">&gt;<br>
+        &lt;h5>Penne Pasta&lt;/h5&gt;<br>
+        &lt;p>500g | $5.95&lt;/p&gt;<br>
+        &lt;/a&gt;<br>
+        &lt;/li&gt;<br>
+        &lt;!--add more lists here--&gt;<br>
+        &lt;/ul&gt;<br>
+        <br>
+        CSS:<br>
+        .products li &#123;<br>
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem;
+        padding: 0.5rem;
+        background: #fdf7e6;
+        &#125;<br>
+
+        .products li:hover &#123;<br>
+        background:#a3cf83;
+        &#125;<br>
+
+        a.product_link &#123;<br>
+        color: #ef7e93;
+        font-weight: bolder;
+        transition: color 0.5s;
+        text-decoration: none;
+        &#125;<br>
+
+        a.product_link:active, a:hover, a:focus &#123;<br>
+        color: white;
+        text-decoration:none;
+        &#125;<br>
+      </code>
+
+    </section>
+
+    <section>
+      <h3>Website grid structure</h3>
+      <h4>CSS selector</h4>
+      <p>.containter .block .row .column</p>
+
+      <h4>Render elements</h4>
+      <div class="container box"><!--flexbox code from week 3 tutorial exercise-->
+        <div class="block left_sidebar">
+          <p>Sidebar & Menu</p>
+        </div>
+
+        <div class="block main">
+          <p>Main Area</p>
+          <div class="row">Header</div>
+          <div class="row box">
+            <div class="column">column1</div>
+            <div class="column">column2</div>
+            <div class="column">column3</div>
+          </div>
+        </div>
+      </div>
+      <h4>Sample Codes</h4>
+      <code>
+        &lt;div class="container box"&gt;<br>
+        &lt;div class="block left_sidebar"&gt;<br>
+        &lt;p&gt;Sidebar & Menu  &lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        <br>
+        &lt;div class="block main"&gt;<br>
+        &lt;p>Main Area  &lt;/p&gt;<br>
+        &lt;div class="row"&gt;<br>Header&lt;/div&gt;<br>
+        &lt;div class="row box"&gt;<br>
+        &lt;div class="column"&gt;column1&lt;/div&gt;<br>
+        &lt;div class="column"&gt;column2&lt;/div&gt;<br>
+        &lt;div class="column"&gt;column3&lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        <br>
+        CSS:<br>
+        .container .block &#123;<br>
+
+        background-color: orange;
+        margin:0.5rem;
+        &#125;<br>
+
+        .row&#123;<br>
+        background: #ef7e93;
+        margin: 2rem;
+        padding:1rem;
+        &#125;<br>
+
+        .column&#123;<br>
+        display: inline-block;
+        background: #fdf7e6;
+        margin: 0.2rem;
+        width:190px;
+        height:220px;
+        padding:1rem;
+        &#125;<br>
+
+      </code>
+
+
+
+
+    </section>
+
+    <section>
+      <h3>Website colour swatches</h3>
+      <h4>CSS selector</h4>
+      <p>.color</p>
+
+      <h4>Rendered elements</h4>
+      <div class="color pink">##ef7e93</div>
+      <div class="color light_pink">#f6cac6</div>
+      <div class="color light_yellow">#fdf7e6</div>
+      <div class="color yellow">#fae192</div>
+      <div class="color orange">#ff8f29</div>
+      <div class="color green">#a3cf83</div>
+      <!--codes of color swatches retrieved from https://stackoverflow.com/questions/11226126/how-can-i-create-a-small-color-box-using-html-and-css/11226586-->
+
+      <h4>Sample codes</h4>
+      <code>
+        &lt;div class="color pink"&gt;##ef7e93&lt;/div&gt;<br>
+        &lt;div class="color light_pink"&gt;#f6cac6&lt;/div&gt;<br>
+        &lt;div class="color light_yellow"&gt;#fdf7e6&lt;/div&gt;<br>
+        &lt;div class="color yellow"&gt;#fae192&lt;/div&gt;<br>
+        &lt;div class="color orange"&gt;#ff8f29&lt;/div&gt;<br>
+        &lt;div class="color green"&gt;#a3cf83&lt;/div&gt;<br>
+        <br>
+        CSS:<br>
+        .color&#123;<br>
+        display: inline-block;
+        width: 90px;
+        height: 50px;
+        padding:1rem;
+        text-align: center;
+        font-weight:bold;
+        &#125;<br>
+
+        .light_pink &#123;<br>
+        background: #f6cac6;
+        color: white;
+
+        &#125;<br>
+        .light_yellow &#123;<br>
+        background: #fdf7e6;
+        color: #bcbcbc;
+        &#125;<br>
+
+        .yellow &#123;<br>
+        background: #fae192;
+        color: white;
+        &#125;<br>
+
+        .pink &#123;<br>
+        background: #ef7e93;
+        color: white;
+        &#125;<br>
+        .orange &#123;<br>
+        background: #ff8f29;
+        color: white;
+        &#125;<br>
+        .green &#123;<br>
+        background: #a3cf83;
+        color: white;
+        &#125;<br>
+
+      </code>
+    </section>
+
+  </section>
+</section>
+<!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+</body>
+
+
+</html>
