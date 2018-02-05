@@ -8,10 +8,9 @@
   flex-wrap: wrap;
 
   justify-content:space-around;
-  margin: 2rem;
+  margin: 0;
 
 }
-
 
 .left_sidebar{
  flex: 1 1 15em;
@@ -26,5 +25,9 @@
 }
 
 .box-textstyling{
+ flex: 2 1 15em;
+}
+
+.box-feature{
  flex: 2 1 15em;
 }
