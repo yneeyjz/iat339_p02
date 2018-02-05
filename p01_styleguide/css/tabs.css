@@ -1,0 +1,72 @@
+/* TABS
+code from https://www.youtube.com/watch?v=hlQQUmi76jc */
+
+.tabs {
+  list-style: none;
+  padding: 0rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.tabs: after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 240px;
+}
+
+.tabs li {
+  float: left;
+}
+
+.tabs li > input {
+  display: none;
+}
+
+.tabs li > label {
+  display: inline-block;
+  border: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  height: 30px;
+  line-height: 30px;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.tabs li > label:hover {
+  background-color: #fae192;
+}
+
+.tabs li:last-child > label {
+  border-right-width: 1px;
+}
+
+.tabs .tab-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 15px;
+  background-color: #FFFDF4;
+  border: 0;
+  width: 100%;
+  margin: 0 1rem 0 0;
+  height: 200px;
+  overflow-y: auto;
+}
+
+/* hide scrollbar
+code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* function */
+.tabs li > input:checked + label {
+  background-color: #FFFDF4;
+}
+
+.tabs li > input:checked ~ .tab-content {
+  display: block;
+}
