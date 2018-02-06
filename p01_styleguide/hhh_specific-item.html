@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/tabs.css">
+
+</head>
+
+<body>
+
+  <header>
+    <a href="">
+      <img id="cart-icon" width="30" height="30" src="img/cart-white.svg" alt="cart icon">
+    </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
+
+    <a href="">
+      <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
+    </a>
+
+    <input id="search-bar" type="text" />
+
+  </header>
+
+  <nav class="nav-main box">
+    <a href="#menu" class="nav-main-item box-item-nav">MENU</a>
+    <a href="#deals" class="nav-main-item box-item-nav">DEALS</a>
+    <a href="#giftbox" class="nav-main-item box-item-nav">GIFTBOX</a>
+    <a href="#recipes" class="nav-main-item box-item-nav">RECIPES</a>
+  </nav>
+
+    <div class="image-panel">
+      <img src="img/deals.jpg" alt="deals cover">
+    </div>
+
+  <!--<div class="top-bar">
+    <a href="">
+      <img id="cart-icon" width="25" height="25" src="img/cart-white.svg" alt="cart icon">
+    </a>  <!using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q
+
+    <a href="">
+      <img id="search-icon" width="25" height="25" src="img/search.svg" alt="search icon">
+    </a>
+
+    <input id="search-bar" type="text" />
+
+  </div>
+-->
+
+
+  <!-- <div class="container">
+    <! DEALS PANEL // -->
+    <!-- <div class="image-panel">
+      <img src="img/deals.jpg" alt="deals cover">
+    </div> -->
+
+    <!-- <div class="divider"></div> -->
+
+    <!--FEATURES SECTION-->
+    <!-- <div class="box">
+      <div class="box-feature feature1">
+
+        <p class="text-feature">What you <br>may like</p>
+        <a href="" class="submit_button">view more</a>
+
+      </div>
+
+      <div class="box-feature feature2">
+        <p class="text-feature">Special Gift <br>for Her</p>
+        <a href="" class="submit_button">view more</a>
+      </div>
+    </div> -->
+<div class="container">
+    <h1>Item Name</h1>
+    <h4>500g</h4>
+    <h3>$9.95</h3>
+    <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
+
+
+    <div class="divider"></div>
+
+    <!-- <TABS> -->
+    <!-- code from https://www.youtube.com/watch?v=hlQQUmi76jc -->
+    <ul class="tabs">
+      <li>
+        <input type="radio" name="tabs" id="tab-1" checked>
+        <label for="tab-1">Details</label>
+        <div class="tab-content">
+          <h3>Ingredients</h3>
+          <p>Insert content here 1</p>
+          <br>
+          <h3>Instructions</h3>
+          <p>Insert content here 1</p>
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="tabs" id="tab-2">
+        <label for="tab-2">Reviews</label>
+        <div class="tab-content">
+          <p>Insert content here 2</p>
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="tabs" id="tab-3">
+        <label for="tab-3">Recipes</label>
+        <div class="tab-content">
+          <div class="box">
+
+            <ul class="products">
+              <li>
+                <!--codes from http://blog.teamtreehouse.com/using-inline-block-to-display-a-product-grid-view-->
+                <a href="#" class="product_link">
+                  <img src="img/penne.jpg" alt="">
+                  <h5>Penne Pasta | 500g</h5>
+                  <p>$5.95</p>
+                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
+                  <title>cart</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1">
+                  	<g id="cart">
+                  		<g id="Group-7" transform="translate(6.000000, 6.000000)">
+                  			<circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
+                  			<polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
+                  				20.015,28.395 			"/>
+                  			<circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
+                  		</g>
+                  	</g>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="product_link">
+                  <img src="img/rotini.jpg" alt="">
+                  <h5>Rotini Pasta | 500g</h5>
+                  <p>$5.95</p>
+                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
+                  <title>cart</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1">
+                    <g id="cart">
+                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
+                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
+                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
+                          20.015,28.395 			"/>
+                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
+                      </g>
+                    </g>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="product_link">
+                  <img src="img/fusilli.jpg" alt="">
+                  <h5>Fusilli Pasta | 500g</h5>
+                  <p>$5.95</p>
+                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
+                  <title>cart</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1">
+                    <g id="cart">
+                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
+                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
+                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
+                          20.015,28.395 			"/>
+                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
+                      </g>
+                    </g>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="product_link">
+                  <img src="img/penne.jpg" alt="">
+                  <h5>Penne Pasta | 500g</h5>
+                  <p>$5.95</p>
+                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
+                  <title>cart</title>
+                  <desc>Created with Sketch.</desc>
+                  <g id="Page-1">
+                    <g id="cart">
+                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
+                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
+                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
+                          20.015,28.395 			"/>
+                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
+                      </g>
+                    </g>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<footer>
+  <p>contact: hello@hhh.com</p>
+
+</footer>
+
+</body>
+
+
+</html>
