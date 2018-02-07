@@ -12,6 +12,17 @@
 
 }
 
+.nav-logo{
+  flex: 2 1 15em;
+}
+.nav-grid-left{
+  flex: 3 1 15em;
+}
+
+.nav-grid-right{
+  flex: 1 1 15em;
+}
+
 .left_sidebar{
  flex: 1 1 15em;
 }
@@ -29,5 +40,5 @@
 }
 
 .box-feature{
- flex: 2 1 15em;
+ flex: 1 1 15em;
 }
