@@ -45,10 +45,52 @@ h4 {
 
 header {
 	background-color: #FFFDF4;
-	padding:6rem;
-	padding-top: 2rem;
-	padding-right: 2rem;
+	padding:0;
   /*border-bottom: 1px solid #f2f2f2;*/
+}
+
+.nav-main{
+	background-color: white;
+	padding:1.8rem;
+
+}
+
+
+.header-text{
+	padding:5rem;
+}
+
+.nav-logo{
+
+
+}
+
+
+.nav-main-item {
+	display:inline-block;
+	color: white;
+	color:#a3cf83;
+	font-size: 1.2rem;
+	padding-right:3rem;
+
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+	text-align: center;
+
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: #ef7e93;
+	text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
+}
+
+.nav-grid-left{
+	margin:auto;
+	width:50%;
+}
+
+.nav-grid-right{
+
 }
 
 /*.top-bar{
@@ -118,8 +160,8 @@ header {
 	vertical-align: middle;
 color:white;
 	height: 220px;
-	margin-top: :2rem;
-	margin:0.5em;
+
+	margin:0.2em;
 	position:relative;
 
 }
@@ -136,13 +178,11 @@ p.text-feature{
 .feature1{
 	background-image: url("../img/feature1.jpeg");
 	width:400px;
-
 }
 
 .feature2{
 	background-image: url("../img/feature2.jpeg");
 	width:200px;
-
 }
 
 p{
@@ -377,22 +417,7 @@ input{/*form style code retrived from https://www.w3schools.com/css/css_form.asp
   color: white;
 }
 
-.nav-main-item {
-	display:block;
-	color: white;
-	color:#a3cf83;
-	font-size: 1.2rem;
-	margin:1.5em;
-	text-decoration: none;
-	transition: background-color 0.5s ease-out;
 
-}
-
-
-.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
-	color: #ef7e93;
-	text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
-}
 
 
 
