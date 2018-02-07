@@ -151,6 +151,7 @@ header {
 	height:1px;
 	width:100%;
 	margin-top:1em;
+	margin-bottom:1em;
 	background-color: #f2f2f2;
 }
 
@@ -159,9 +160,9 @@ header {
 	zoom:1;
 	vertical-align: middle;
 color:white;
-	height: 220px;
+	height: 250px;
 
-	margin:0.2em;
+	margin:0.5em;
 	position:relative;
 
 }
@@ -182,6 +183,34 @@ p.text-feature{
 
 .feature2{
 	background-image: url("../img/feature2.jpeg");
+	width:200px;
+}
+
+.menu2{
+	background-image: url("../img/menu2.jpeg");
+	width:200px;
+}
+
+.menu3{
+	background-image: url("../img/menu3.jpg");
+	width:200px;
+}
+
+.menu4{
+	background-image: url("../img/menu4.jpeg");
+
+	width:200px;
+}
+
+.menu5{
+	background-image: url("../img/menu5.jpeg");
+
+	width:200px;
+}
+
+.menu6{
+	background-image: url("../img/menu6.jpeg");
+
 	width:200px;
 }
 
@@ -328,14 +357,13 @@ code, samp {
 	padding: 0.8rem;
 }
 
-a.submit_button{
+.submit_button{
 
 	margin-left: 3rem;
 
-position:relative;
+position:absolute;
 
-top:80%;
-transform:translateY(-80%);/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
+bottom:3.5rem;/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
 
 }
 
