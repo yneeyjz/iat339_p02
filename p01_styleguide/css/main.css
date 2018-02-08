@@ -198,14 +198,12 @@ vertical-align: middle;
 		border-width: 0.15rem;
 		padding: 0.6rem 1rem;
 		text-decoration:none;
-
 	}
 
 	.recipes_button:hover, .buttonfocus {
 		background-color:#ef7e93;
 		color:white;
 		border-color:#ef7e93;
-
 	}
 
 	.recipes-category{
@@ -216,7 +214,26 @@ vertical-align: middle;
 		height: 250px;
 		margin:0.5em;
 		position:relative;
+	}
 
+	.grid_large{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 350px;
+		margin:0.7em;
+		position:relative;
+	}
+
+	.grid_small{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 350px;
+		margin:0.7em;
+		position:relative;
 	}
 
 	.divider{
