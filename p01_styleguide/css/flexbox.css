@@ -29,6 +29,15 @@
   flex: 1 1 15em;
 }
 
+/*about page*/
+.about_left{
+  flex: 1 1 15em;
+}
+
+.about_right{
+  flex: 1 1 15em;
+}
+
 /*recipes panel*/
 .recipes_intro_left{
   flex: 1 1 15em;
