@@ -138,7 +138,7 @@ vertical-align: middle;
 
 	.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
 		display:inline-block;
-		height: 5%;
+		height: 350px;
 		overflow: hidden;
 
 	}
@@ -194,7 +194,7 @@ vertical-align: middle;
 		height: 250px;
 		margin:0.5em;
 		position:relative;
-	
+
 	}
 
 	.divider{
@@ -340,7 +340,7 @@ vertical-align: middle;
 	}
 
 	.products{
-		background-color: #FFFDF4;
+		/*background-color: #FFFDF4;*/
 	}
 
 	.products li {
@@ -429,6 +429,30 @@ vertical-align: middle;
 	}
 
 	.submit_button:hover, .buttonfocus {
+		background-color:#ef7e93;
+		color:white;
+		border-color:#ef7e93;
+
+	}
+
+	.sort{
+		margin-left: 4rem;
+	}
+
+	.sort_button{/*code from lab exercise*/
+		border: 1px solid #ef7e93;
+		/*border-radius: 0.3rem;*/
+		font-size: 1rem;
+		color:#ef7e93;
+		padding: 0.6rem 1rem;
+		text-decoration:none;
+		display:inline-block;
+
+
+
+	}
+
+	.sort_button:hover, .buttonfocus {
 		background-color:#ef7e93;
 		color:white;
 		border-color:#ef7e93;
