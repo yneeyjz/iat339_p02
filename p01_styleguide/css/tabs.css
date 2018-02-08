@@ -6,6 +6,8 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
   padding: 0rem;
   margin: 1rem 0;
   position: relative;
+  height: 240px;
+
 }
 
 .tabs: after {
@@ -26,8 +28,6 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
 .tabs li > label {
   display: inline-block;
   border: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
   height: 30px;
   line-height: 30px;
   padding: 0.5rem 1rem;
@@ -36,12 +36,10 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
 }
 
 .tabs li > label:hover {
-  background-color: #fae192;
+  background-color: #ef7e93;
+  color: white;
 }
 
-.tabs li:last-child > label {
-  border-right-width: 1px;
-}
 
 .tabs .tab-content {
   display: none;
@@ -51,9 +49,8 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
   background-color: #FFFDF4;
   border: 0;
   width: 100%;
-  margin: 0 1rem 0 0;
-  height: 300px;
-  overflow-y: auto;
+  height: 240px;
+  overflow-y: scroll;
 }
 
 /* hide scrollbar
@@ -65,8 +62,46 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
 /* function */
 .tabs li > input:checked + label {
   background-color: #FFFDF4;
+  color: black;
 }
 
 .tabs li > input:checked ~ .tab-content {
   display: block;
+}
+
+
+/* ACCORDION */
+/* code from https://www.youtube.com/watch?v=8t8QCRMZCu4 */
+.accordion-header {
+  display: block;
+  padding: 1rem;
+  margin: 0.1rem 1rem 0 0;
+  width: auto;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+/* a.accordion-header:active {
+  background-color: #FFFDF4;
+} */
+
+.accordion-content {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #FFFDF4;
+  -webkit-transition:height 400ms ease;
+  transition:height 400ms ease;
+
+}
+
+.accordion-content p {
+  margin: 1rem;
+}
+
+.accordion-content:target {
+  height: 400px;
+  background-color: #FFFDF4;
+  overflow-y: scroll;
 }
