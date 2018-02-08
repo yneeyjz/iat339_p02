@@ -306,7 +306,7 @@ vertical-align: middle;
 	p{
 		margin-top:0.2rem;
 	}
-	p,code,ol{
+	p,code,ul{
 		max-width: 30rem;
 	}
 
@@ -324,9 +324,11 @@ vertical-align: middle;
 
 	.numbered_list{
 		list-style-type: none;
+
 	}
 	.numbered_list li{/* codes of colored numbered list retrieved from https://stackoverflow.com/questions/488830/ol-with-numbers-another-color*/
 		counter-increment: item;
+		margin-bottom: 1rem;
 	}
 	.numbered_list li::before{
 		content: counter(item) ". ";
@@ -399,18 +401,19 @@ vertical-align: middle;
 		font-size: 1.2rem;
 		margin-bottom: 0.5rem;
 		margin-top:0.8rem;
-		margin-left:0.8rem;
 		color:#7a7a7a;
 		font-weight:normal;
 	}
 
-	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
 
+	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
+		/*background-color: #ef7e93;*/
+		 outline: 5px solid #ef7e93;;
 	}
 
 	a.product_link {
 		text-decoration: none;
-
+		text-align: center;
 	}
 
 	a.product_link:active, a:hover, a:focus {
@@ -422,9 +425,18 @@ vertical-align: middle;
 		font-weight: bolder;
 		transition: color 0.5s;
 		text-decoration: none;
-		margin-left: 0.8rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
+
+	.product_link p: {
+
+	}
+
+	.product_img{
+
+	}
+
+
 
 	svg.cart-button{
 		position:absolute;
