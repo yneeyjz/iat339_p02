@@ -503,26 +503,30 @@ vertical-align: middle;
 	}
 
 	.proceed_button{/*code from lab exercise*/
-		border-color:black;
+		border-color:#ef7e93;
 		border-style:solid;
 		/*border-radius: 0.3rem;*/
-		color:black;
+		color:#ef7e93;
 		border-width: 0.15rem;
-		padding: 0.3rem 0.8rem;
+		padding: 0.6rem 1rem;
 		text-decoration:none;
-		text-align: center;
-		display:block;
-		width: 100px;
-		align: center;
 		margin: 1rem;
 	}
 
-}
 	.proceed_button:hover, .buttonfocus {
 		background-color:#ef7e93;
 		color:white;
 		border-color:#ef7e93;
+	}
 
+	.recipes-category{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 250px;
+		margin:0.5em;
+		position:relative;
 	}
 
 	.sort{
