@@ -1,5 +1,5 @@
 /*
-	Please leave the content below alone for this week's tutorial
+Please leave the content below alone for this week's tutorial
 */
 body {
 	font-family: "champagne__limousines";
@@ -16,7 +16,7 @@ body {
 h1 {
 	font-size: 3rem;
 	margin-bottom: 0;
-  margin-top:6rem;
+	margin-top:6rem;
 	color: #ef7e93;/*pink*/
 }
 
@@ -25,8 +25,8 @@ h2 {
 	margin-bottom: 0.8rem;
 
 	color:#ef7e93;/*pink*/
-  border: 1px solid #ef7e93;
-  padding:1.5rem;
+	border: 1px solid #ef7e93;
+	padding:1.5rem;
 	padding-left:2.5rem;
 }
 
@@ -39,14 +39,14 @@ h3 {
 h4 {
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
-  margin-top:0.8rem;
+	margin-top:0.8rem;
 	color:#ff8f29;/*orange*/
 }
 
 header {
 	background-color: #FFFDF4;
 	padding:0;
-  /*border-bottom: 1px solid #f2f2f2;*/
+	/*border-bottom: 1px solid #f2f2f2;*/
 }
 
 .nav-main{
@@ -95,14 +95,14 @@ header {
 
 /*.top-bar{
 
-	height:50px;
-	width:100%;
-	background-color: #ef7e93;
-	position:absolute;
-	top:0;
-	display:inline-block;
-	zoom:1;
-	vertical-align: middle;
+height:50px;
+width:100%;
+background-color: #ef7e93;
+position:absolute;
+top:0;
+display:inline-block;
+zoom:1;
+vertical-align: middle;
 }*/
 
 #search-bar{
@@ -111,8 +111,8 @@ header {
 	color: #ef7e93;
 	font-size:0.8em;
 	float:right;
-		margin-right:0.5rem;
-		top:10%;
+	margin-right:0.5rem;
+	top:10%;
 }
 
 #search-icon{
@@ -126,354 +126,404 @@ header {
 
 #cart-icon{
 	float:right;
-		margin-right:1rem;
-		position:relative;
-		top:10%;
-		/*transform:translateY(-50%);*/
+	margin-right:1rem;
+	position:relative;
+	top:10%;
+	/*transform:translateY(-50%);*/
 }
 
 #search-bar:focus, input:focus{
-    outline: none;
-}/*remove input box https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome*/
+	outline: none;
+	}/*remove input box https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome*/
 
-.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
-    width: 100%;
-    height: 5%;
-    overflow: hidden;
+	.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
+		display:inline-block;
+		height: 5%;
+		overflow: hidden;
 
-}
-.image-panel img {
-    width: 100%;
+	}
+	.image-panel img {
+
+		width: 100%;
 		margin-top: -25%;
-}
+	}
 
-.divider{
-	height:1px;
-	width:100%;
-	margin-top:1em;
-	margin-bottom:1em;
-	background-color: #f2f2f2;
-}
+	.recipes_intro_left{
+		display:inline-block;
+		height:350px;
+		text-align: center;
+		background-color: #FFFDF4;
+	}
 
-.box-feature{
-	display:inline-block;
-	zoom:1;
-	vertical-align: middle;
-color:white;
-	height: 250px;
+	.recipes_intro_right{
+		display:inline-block;
+		width:70%;
+		height:350px;
+		background-image: url(../img/feature1.jpeg);
+	}
 
-	margin:0.5em;
-	position:relative;
+	.recipes_intro_text{
+		font-size: 1.5rem;
+		padding:4.5rem;
+		padding-bottom: 1rem;
 
-}
+	}
+	.recipes_button{/*code from lab exercise*/
+		border-color:#ef7e93;
+		border-style:solid;
+		/*border-radius: 0.3rem;*/
+		color:#ef7e93;
+		border-width: 0.15rem;
+		padding: 0.6rem 1rem;
+		text-decoration:none;
 
-p.text-feature{
+	}
 
-	font-size: 3rem;
-	position:relative;
-	margin-left:3rem;
-	top:40%;
-	transform:translateY(-50%);/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
-}
+	.recipes_button:hover, .buttonfocus {
+		background-color:#ef7e93;
+		color:white;
+		border-color:#ef7e93;
 
-.feature1{
-	background-image: url("../img/feature1.jpeg");
-	width:400px;
-}
+	}
 
-.feature2{
-	background-image: url("../img/feature2.jpeg");
-	width:200px;
-}
+	.recipes-category{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 250px;
+		margin:0.5em;
+		position:relative;
+	
+	}
 
-.menu2{
-	background-image: url("../img/menu2.jpeg");
-	width:200px;
-}
-
-.menu3{
-	background-image: url("../img/menu3.jpg");
-	width:200px;
-}
-
-.menu4{
-	background-image: url("../img/menu4.jpeg");
-
-	width:200px;
-}
-
-.menu5{
-	background-image: url("../img/menu5.jpeg");
-
-	width:200px;
-}
-
-.menu6{
-	background-image: url("../img/menu6.jpeg");
-
-	width:200px;
-}
-
-p{
-  margin-top:0.2rem;
-}
-p,code,ol{
-	max-width: 30rem;
-}
-
-ul {
-    color: black;
-    list-style-type:none;
+	.divider{
+		height:1px;
 		width:100%;
-}
+		margin-top:1em;
+		margin-bottom:1em;
+		background-color: #f2f2f2;
+	}
 
-.bullet_list li::before{ /**code of colored bullet points retrived from http://geniuscarrier.com/3-ways-to-change-the-color-of-dot-in-an-unordered-list/**/
-	content: '\25CF';
-	color: #a3cf83;/*green*/
-	padding-right: 0.5rem;
-}
+	.box-feature{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 250px;
+		margin:0.5em;
+		position:relative;
+		background-color: pink;
 
-.numbered_list{
-  list-style-type: none;
-}
-.numbered_list li{/* codes of colored numbered list retrieved from https://stackoverflow.com/questions/488830/ol-with-numbers-another-color*/
-  counter-increment: item;
-}
-.numbered_list li::before{
-  content: counter(item) ". ";
-  color: #a3cf83;/*green*/
-	padding-right: 0.5rem;
-}
+	}
 
-img {
-	height: auto;
-	max-width: 100%;
-}
+	p.text-feature{
 
-figure {
-	margin: 0;
-}
+		font-size: 3rem;
+		position:relative;
+		margin-left:3rem;
+		top:40%;
+		transform:translateY(-50%);/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
+	}
 
-figcaption {
-	font-style: italic;
-}
+	.feature1{
+		background-image: url("../img/feature1.jpeg");
+		width:400px;
+	}
 
-a {
-	color: rgb(200,0,0);
-	transition: color 0.5s;
-}
+	.feature2{
+		background-image: url("../img/feature2.jpeg");
+		width:200px;
+	}
 
-/*a:active, a:hover, a:focus {
+	.menu2{
+		background-image: url("../img/menu2.jpeg");
+		width:200px;
+	}
+
+	.menu3{
+		background-image: url("../img/menu3.jpg");
+		width:200px;
+	}
+
+	.menu4{
+		background-image: url("../img/menu4.jpeg");
+
+		width:200px;
+	}
+
+	.menu5{
+		background-image: url("../img/menu5.jpeg");
+
+		width:200px;
+	}
+
+	.menu6{
+		background-image: url("../img/menu6.jpeg");
+
+		width:200px;
+	}
+
+	p{
+		margin-top:0.2rem;
+	}
+	p,code,ol{
+		max-width: 30rem;
+	}
+
+	ul {
+		color: black;
+		list-style-type:none;
+		width:100%;
+	}
+
+	.bullet_list li::before{ /**code of colored bullet points retrived from http://geniuscarrier.com/3-ways-to-change-the-color-of-dot-in-an-unordered-list/**/
+		content: '\25CF';
+		color: #a3cf83;/*green*/
+		padding-right: 0.5rem;
+	}
+
+	.numbered_list{
+		list-style-type: none;
+	}
+	.numbered_list li{/* codes of colored numbered list retrieved from https://stackoverflow.com/questions/488830/ol-with-numbers-another-color*/
+		counter-increment: item;
+	}
+	.numbered_list li::before{
+		content: counter(item) ". ";
+		color: #a3cf83;/*green*/
+		padding-right: 0.5rem;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+	figure {
+		margin: 0;
+	}
+
+	figcaption {
+		font-style: italic;
+	}
+
+	a {
+		color: rgb(200,0,0);
+		transition: color 0.5s;
+	}
+
+	/*a:active, a:hover, a:focus {
 	color: rgb(50,0,0);
 	text-decoration: none;
-}*/
+	}*/
 
-a.back_button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: 1.5rem;
-    border: 2px solid #ef7e93;/*pink*/
-}
-a.back_button:hover {
-    background-color: #ef7e93;/*pink*/
-    color: white;
-}
+	a.back_button {
+		text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;
+		font-size: 1.5rem;
+		border: 2px solid #ef7e93;/*pink*/
+	}
+	a.back_button:hover {
+		background-color: #ef7e93;/*pink*/
+		color: white;
+	}
 
-a.intext_link{
-  color: #a3cf83;
-	text-decoration: underline;
-}
-.intext_link:active, .intext_link:hover, .intext_link:focus {
-	color: #ef7e93;
-	text-decoration: underline;
-}
+	a.intext_link{
+		color: #a3cf83;
+		text-decoration: underline;
+	}
+	.intext_link:active, .intext_link:hover, .intext_link:focus {
+		color: #ef7e93;
+		text-decoration: underline;
+	}
 
-.products{
-	background-color: #FFFDF4;
-}
+	.products{
+		background-color: #FFFDF4;
+	}
 
-.products li {
-    display: inline-block;
-  /*  vertical-align: top;*/
-    margin: 2rem;
-    padding: 0;
-  /*  border: 2px solid #fdf7e6;*/
+	.products li {
+		display: inline-block;
+		/*  vertical-align: top;*/
+		margin: 2rem;
+		padding: 0;
+		/*  border: 2px solid #fdf7e6;*/
 		background-color: white;
 		box-shadow: 0px 2px 4px #dddddd;
 		/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
 		position:relative;
 
-}
+	}
 
-h5 {
-	font-size: 1.2rem;
-	margin-bottom: 0.5rem;
-  margin-top:0.8rem;
-	margin-left:0.8rem;
-	color:#7a7a7a;
-  font-weight:normal;
-}
+	h5 {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+		margin-top:0.8rem;
+		margin-left:0.8rem;
+		color:#7a7a7a;
+		font-weight:normal;
+	}
 
-.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
+	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
 
-}
+	}
 
-a.product_link {
-  text-decoration: none;
+	a.product_link {
+		text-decoration: none;
 
-}
+	}
 
-a.product_link:active, a:hover, a:focus {
+	a.product_link:active, a:hover, a:focus {
 
-}
+	}
 
-.product_link p{
-	color: #ef7e93;
-  font-weight: bolder;
-	transition: color 0.5s;
-  text-decoration: none;
-	margin-left: 0.8rem;
-	margin-bottom: 2rem;
-}
+	.product_link p{
+		color: #ef7e93;
+		font-weight: bolder;
+		transition: color 0.5s;
+		text-decoration: none;
+		margin-left: 0.8rem;
+		margin-bottom: 2rem;
+	}
 
-svg.cart-button{
-	position:absolute;
-	bottom:0;
-	right:0;
-	fill:#ef7e93;
-	stroke:#ef7e93;
-}
+	svg.cart-button{
+		position:absolute;
+		bottom:0;
+		right:0;
+		fill:#ef7e93;
+		stroke:#ef7e93;
+	}
 
-a.product_link:active, svg:hover, svg:focus {
-	fill:white;
-	stroke:white;
-	background-color: #ef7e93;
-}
+	a.product_link:active, svg:hover, svg:focus {
+		fill:white;
+		stroke:white;
+		background-color: #ef7e93;
+	}
 
-code, samp {
-	display: block;
-	background-color:#fdf7e6;
-	padding: 0.8rem;
-}
-
-.submit_button{
-
-	margin-left: 3rem;
-
-position:absolute;
-
-bottom:3.5rem;/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
-
-}
-
-.submit_button{/*code from lab exercise*/
-border-color:white;
-border-style:solid;
-/*border-radius: 0.3rem;*/
-color:white;
-border-width: 0.15rem;
-padding: 0.25rem 0.75rem;
-text-decoration:none;
-
-}
-
-.submit_button:hover, .buttonfocus {
-  background-color:#ef7e93;
-  color:white;
-	border-color:#ef7e93;
-
-}
+	code, samp {
+		display: block;
+		background-color:#fdf7e6;
+		padding: 0.8rem;
+	}
 
 
 
-form {
-  color:#ef7e93;
-  border-color: #ef7e93;
-}
-
-input{/*form style code retrived from https://www.w3schools.com/css/css_form.asp*/
-  font-size: 0.8rem;
-  color: #606060;
-  border: 1px solid #ef7e93;
-  padding:0.3rem;
-}
-
-.header_samples {
-  display: block;
-  background-color: #f2f2f2;
-  padding: 0.8rem;
-  max-width: 40rem;
-}
-
-.color{/*codes of color swatches retrieved from https://stackoverflow.com/questions/11226126/how-can-i-create-a-small-color-box-using-html-and-css/11226586*/
-  display: inline-block;
-  width: 90px;
-  height: 50px;
-  padding:1rem;
-  text-align: center;
-  font-weight:bold;
+	.submit_button{/*code from lab exercise*/
+		border-color:white;
+		border-style:solid;
+		/*border-radius: 0.3rem;*/
+		color:white;
+		border-width: 0.15rem;
+		padding: 0.3rem 0.8rem;
+		text-decoration:none;
 
 
-}
+		margin-left: 3rem;
 
-.light_pink {
-  background: #f6cac6;
-  color: white;
+		position:absolute;
 
-}
-.light_yellow {
-  background: #FFFDF4;
-  color: #bcbcbc;
-}
+		bottom:3.5rem;/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
 
-.yellow {
-  background: #fae192;
-  color: white;
-}
 
-.pink {
-  background: #ef7e93;
-  color: white;
-}
-.orange {
-  background: #ff8f29;
-  color: white;
-}
-.green {
-  background: #a3cf83;
-  color: white;
-}
+	}
+
+	.submit_button:hover, .buttonfocus {
+		background-color:#ef7e93;
+		color:white;
+		border-color:#ef7e93;
+
+	}
 
 
 
+	form {
+		color:#ef7e93;
+		border-color: #ef7e93;
+	}
+
+	input{/*form style code retrived from https://www.w3schools.com/css/css_form.asp*/
+		font-size: 0.8rem;
+		color: #606060;
+		border: 1px solid #ef7e93;
+		padding:0.3rem;
+	}
+
+	.header_samples {
+		display: block;
+		background-color: #f2f2f2;
+		padding: 0.8rem;
+		max-width: 40rem;
+	}
+
+	.color{/*codes of color swatches retrieved from https://stackoverflow.com/questions/11226126/how-can-i-create-a-small-color-box-using-html-and-css/11226586*/
+		display: inline-block;
+		width: 90px;
+		height: 50px;
+		padding:1rem;
+		text-align: center;
+		font-weight:bold;
 
 
-.container .block {
+	}
 
-  background-color: orange;
-  margin:0.5rem;
-  }
+	.light_pink {
+		background: #f6cac6;
+		color: white;
 
-.row{
-  background: #ef7e93;
-  margin: 2rem;
-  padding:1rem;
-}
+	}
+	.light_yellow {
+		background: #FFFDF4;
+		color: #bcbcbc;
+	}
 
-.column{
-  display: inline-block;
-  background: #fdf7e6;
-  margin: 0.2rem;
-  width:190px;
-  height:220px;
-  padding:1rem;
-}
+	.yellow {
+		background: #fae192;
+		color: white;
+	}
 
-footer{
-	width:100%;
-	background-color: #ef7e93;
-	color:white;
-	margin:0;
-	padding: 2rem;
-}
+	.pink {
+		background: #ef7e93;
+		color: white;
+	}
+	.orange {
+		background: #ff8f29;
+		color: white;
+	}
+	.green {
+		background: #a3cf83;
+		color: white;
+	}
+
+
+
+
+
+	.container .block {
+
+		background-color: orange;
+		margin:0.5rem;
+	}
+
+	.row{
+		background: #ef7e93;
+		margin: 2rem;
+		padding:1rem;
+	}
+
+	.column{
+		display: inline-block;
+		background: #fdf7e6;
+		margin: 0.2rem;
+		width:190px;
+		height:220px;
+		padding:1rem;
+	}
+
+	footer{
+		width:100%;
+		background-color: #ef7e93;
+		color:white;
+		margin:0;
+		padding: 2rem;
+	}
