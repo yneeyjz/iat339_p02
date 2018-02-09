@@ -148,6 +148,13 @@ vertical-align: middle;
 		height: 100%;
 		overflow: hidden;
 		width:50%;
+	}
+
+	.image-panel3 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
+		display:inline-block;
+		height: 100%;
+		width:200px;
+		overflow: hidden;
 
 	}
 	.image-panel img {
