@@ -142,6 +142,14 @@ vertical-align: middle;
 		overflow: hidden;
 
 	}
+
+	.image-panel2 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
+		display:inline-block;
+		height: 100%;
+		overflow: hidden;
+		width:50%;
+
+	}
 	.image-panel img {
 
 		width: 100%;
