@@ -60,11 +60,6 @@ header {
 	padding:5rem;
 }
 
-.nav-logo{
-
-
-}
-
 
 .nav-main-item {
 	display:inline-block;
@@ -93,18 +88,6 @@ header {
 
 }
 
-/*.top-bar{
-
-height:50px;
-width:100%;
-background-color: #ef7e93;
-position:absolute;
-top:0;
-display:inline-block;
-zoom:1;
-vertical-align: middle;
-}*/
-
 #search-bar{
 	background:  #fffdf4;
 	border-bottom: 1.5px solid #ef7e93;
@@ -132,22 +115,30 @@ vertical-align: middle;
 	/*transform:translateY(-50%);*/
 }
 
+.item-icon-containter{
+	display: block;
+	margin-left: auto;
+	    margin-right: auto;
+			margin-top: 0;
+			margin-bottom: 1rem;
+}
+
 #search-bar:focus, input:focus{
 	outline: none;
 	}/*remove input box https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome*/
 
 	.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
 		display:inline-block;
-		height: 350px;
+
 		overflow: hidden;
 
 	}
 
 	.image-panel2 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
 		display:inline-block;
-		height: 100%;
 		overflow: hidden;
-		width:50%;
+		max-width: 35rem;
+
 	}
 
 	.image-panel3 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
@@ -172,9 +163,9 @@ vertical-align: middle;
 
 	.about_right{
 		display:inline-block;
-		width:70%;
+		width:80%;
 
-		background-image: url(../img/feature1.jpeg);
+		background-image: url(../img/about.png);
 	}
 
 	.about_text{
@@ -259,6 +250,26 @@ vertical-align: middle;
 		background-color: #f2f2f2;
 	}
 
+	.page_number{
+
+		display: block;
+		margin-left: auto;
+				margin-right: auto;
+				margin-top: 0;
+				margin-bottom: 1rem;
+				text-align: center;
+	}
+
+a.page{
+		color: #ef7e93;
+		transition: color 0.5s;
+		text-decoration:none;
+	}
+
+.page:active, .page:hover, .page:focus {
+	text-decoration:underline;
+	}
+
 	.box-feature{
 		display:inline-block;
 		zoom:1;
@@ -268,8 +279,10 @@ vertical-align: middle;
 		margin:0.5em;
 		position:relative;
 		background-color: pink;
-
+		align-items: center;
+		justify-content: center;
 	}
+
 
 	p.text-feature{
 
@@ -281,39 +294,54 @@ vertical-align: middle;
 	}
 
 	.feature1{
-		background-image: url("../img/feature1.jpeg");
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+			url("../img/feature1.jpeg");
+			/*color overlay code from https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/*/
 		width:400px;
 	}
 
 	.feature2{
-		background-image: url("../img/feature2.jpeg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/feature2.jpeg");
 		width:200px;
 	}
 
 	.menu2{
-		background-image: url("../img/menu2.jpeg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/menu2.jpeg");
 		width:200px;
 	}
 
 	.menu3{
-		background-image: url("../img/menu3.jpg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/menu3.jpg");
 		width:200px;
 	}
 
 	.menu4{
-		background-image: url("../img/menu4.jpeg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/menu4.jpeg");
 
 		width:200px;
 	}
 
 	.menu5{
-		background-image: url("../img/menu5.jpeg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/menu5.jpeg");
 
 		width:200px;
 	}
 
 	.menu6{
-		background-image: url("../img/menu6.jpeg");
+		background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../img/menu6.jpeg");
 
 		width:200px;
 	}
@@ -364,15 +392,7 @@ vertical-align: middle;
 		font-style: italic;
 	}
 
-	a {
-		color: rgb(200,0,0);
-		transition: color 0.5s;
-	}
 
-	/*a:active, a:hover, a:focus {
-	color: rgb(50,0,0);
-	text-decoration: none;
-	}*/
 
 	a.back_button {
 		text-decoration: none;
@@ -395,21 +415,8 @@ vertical-align: middle;
 		text-decoration: underline;
 	}
 
-	.products{
-		/*background-color: #FFFDF4;*/
-	}
 
-	.products li {
-		display: inline-block;
-		/*  vertical-align: top;*/
-		margin: 2rem;
-		padding: 0;
-		/*  border: 2px solid #fdf7e6;*/
-		background-color: white;
-		box-shadow: 0px 2px 4px #dddddd;
-		/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
-		position:relative;
-	}
+
 
 	.reviews li {
 		display: inline-block;
@@ -436,6 +443,17 @@ vertical-align: middle;
 		font-weight:normal;
 	}
 
+	.products li {
+		display: inline-block;
+		/*  vertical-align: top;*/
+		margin: 2rem;
+		padding: 0;
+		/*  border: 2px solid #fdf7e6;*/
+		background-color: white;
+		box-shadow: 0px 2px 4px #dddddd;
+		/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+		position:relative;
+	}
 
 	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
 		/*background-color: #ef7e93;*/
@@ -456,31 +474,22 @@ vertical-align: middle;
 		font-weight: bolder;
 		transition: color 0.5s;
 		text-decoration: none;
-		margin-bottom: 1.5rem;
+		margin-bottom: 0.5rem;
 	}
-
-	.product_link p: {
-
-	}
-
-	.product_img{
-
-	}
-
 
 
 	svg.cart-button{
-		position:absolute;
-		bottom:0;
-		right:0;
-		fill:#ef7e93;
+		fill:white;
 		stroke:#ef7e93;
+		margin: 1rem;
+		margin-bottom: 0;
+		margin-top:0.2rem;
 	}
 
 	a.product_link:active, svg:hover, svg:focus {
-		fill:white;
+		fill:#ef7e93;
 		stroke:white;
-		background-color: #ef7e93;
+
 	}
 
 	code, samp {
@@ -630,10 +639,6 @@ vertical-align: middle;
 		color: white;
 	}
 
-
-
-
-
 	.container .block {
 
 		background-color: orange;
@@ -656,9 +661,23 @@ vertical-align: middle;
 	}
 
 	footer{
-		width:100%;
 		background-color: #ef7e93;
 		color:white;
 		margin:0;
 		padding: 2rem;
 	}
+
+	.footer{
+		margin-left: 2rem;
+	}
+
+	.footer_link {
+		display: block;
+		color: white;
+		margin-bottom: 0.7em;
+		text-decoration:none;
+	}
+
+	.footer_link:active, .footer_link:hover, .footer_link:focus {
+		text-decoration:underline;
+		}

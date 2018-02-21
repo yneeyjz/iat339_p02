@@ -29,13 +29,27 @@
   flex: 1 1 15em;
 }
 
+.image_panel2{
+  flex: 1 1 15em;
+}
+
+/*main body*/
+.side_bar{
+  flex: 1 1 15em;
+}
+
+.main_body{
+  flex: 5 1 15em;
+}
+
+
 /*about page*/
 .about_left{
   flex: 1 1 15em;
 }
 
 .about_right{
-  flex: 1 1 15em;
+  flex: 2 1 15em;
 }
 
 /*recipes panel*/
@@ -75,4 +89,8 @@
 
 .recipes-category{
  flex: 1 1 15em;
+}
+
+.footer{
+  flex: 1 1 15em;
 }
