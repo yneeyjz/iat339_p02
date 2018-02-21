@@ -14,9 +14,9 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin-bottom: 0;
-	margin-top:6rem;
+	margin-top:3rem;
 	color: #ef7e93;/*pink*/
 }
 
@@ -71,7 +71,7 @@ header {
 	color: white;
 	color:#a3cf83;
 	font-size: 1.2rem;
-	padding-right:3rem;
+	padding-right:2.7rem;
 
 	text-decoration: none;
 	transition: background-color 0.5s ease-out;
@@ -142,11 +142,47 @@ vertical-align: middle;
 		overflow: hidden;
 
 	}
+
+	.image-panel2 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
+		display:inline-block;
+		height: 100%;
+		overflow: hidden;
+		width:50%;
+	}
+
+	.image-panel3 {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
+		display:inline-block;
+		height: 100%;
+		width:200px;
+		overflow: hidden;
+
+	}
 	.image-panel img {
 
 		width: 100%;
 		margin-top: -25%;
 	}
+
+	.about_left{
+		display:inline-block;
+		height: 30rem;
+		text-align: center;
+		background-color: #FFFDF4;
+	}
+
+	.about_right{
+		display:inline-block;
+		width:70%;
+
+		background-image: url(../img/feature1.jpeg);
+	}
+
+	.about_text{
+		font-size: 1.2rem;
+		padding:4.5rem;
+		padding-bottom: 1rem;
+	}
+
 
 	.recipes_intro_left{
 		display:inline-block;
@@ -166,8 +202,9 @@ vertical-align: middle;
 		font-size: 1.5rem;
 		padding:4.5rem;
 		padding-bottom: 1rem;
-
 	}
+
+
 	.recipes_button{/*code from lab exercise*/
 		border-color:#ef7e93;
 		border-style:solid;
@@ -176,14 +213,12 @@ vertical-align: middle;
 		border-width: 0.15rem;
 		padding: 0.6rem 1rem;
 		text-decoration:none;
-
 	}
 
 	.recipes_button:hover, .buttonfocus {
 		background-color:#ef7e93;
 		color:white;
 		border-color:#ef7e93;
-
 	}
 
 	.recipes-category{
@@ -194,7 +229,26 @@ vertical-align: middle;
 		height: 250px;
 		margin:0.5em;
 		position:relative;
+	}
 
+	.grid_large{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 350px;
+		margin:0.7em;
+		position:relative;
+	}
+
+	.grid_small{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 350px;
+		margin:0.7em;
+		position:relative;
 	}
 
 	.divider{
@@ -285,9 +339,11 @@ vertical-align: middle;
 
 	.numbered_list{
 		list-style-type: none;
+
 	}
 	.numbered_list li{/* codes of colored numbered list retrieved from https://stackoverflow.com/questions/488830/ol-with-numbers-another-color*/
 		counter-increment: item;
+		margin-bottom: 1rem;
 	}
 	.numbered_list li::before{
 		content: counter(item) ". ";
@@ -353,25 +409,42 @@ vertical-align: middle;
 		box-shadow: 0px 2px 4px #dddddd;
 		/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
 		position:relative;
+	}
 
+	.reviews li {
+		display: inline-block;
+		margin: 1rem;
+		padding: 0;
+		position:relative;
+		max-width: 20rem;
+	}
+
+	.reviews h2 {
+		border: 0;
+		padding: 0;
+	}
+
+	.reviews p{
+		padding-right: 1.5rem;
 	}
 
 	h5 {
 		font-size: 1.2rem;
 		margin-bottom: 0.5rem;
 		margin-top:0.8rem;
-		margin-left:0.8rem;
 		color:#7a7a7a;
 		font-weight:normal;
 	}
 
-	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
 
+	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
+		/*background-color: #ef7e93;*/
+		 outline: 5px solid #ef7e93;;
 	}
 
 	a.product_link {
 		text-decoration: none;
-
+		text-align: center;
 	}
 
 	a.product_link:active, a:hover, a:focus {
@@ -383,9 +456,18 @@ vertical-align: middle;
 		font-weight: bolder;
 		transition: color 0.5s;
 		text-decoration: none;
-		margin-left: 0.8rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
+
+	.product_link p: {
+
+	}
+
+	.product_img{
+
+	}
+
+
 
 	svg.cart-button{
 		position:absolute;
@@ -435,6 +517,33 @@ vertical-align: middle;
 
 	}
 
+	.proceed_button{/*code from lab exercise*/
+		border-color:#ef7e93;
+		border-style:solid;
+		/*border-radius: 0.3rem;*/
+		color:#ef7e93;
+		border-width: 0.15rem;
+		padding: 0.6rem 1rem;
+		text-decoration:none;
+		margin: 1rem;
+	}
+
+	.proceed_button:hover, .buttonfocus {
+		background-color:#ef7e93;
+		color:white;
+		border-color:#ef7e93;
+	}
+
+	.recipes-category{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		color:white;
+		height: 250px;
+		margin:0.5em;
+		position:relative;
+	}
+
 	.sort{
 		margin-left: 4rem;
 	}
@@ -464,6 +573,7 @@ vertical-align: middle;
 	form {
 		color:#ef7e93;
 		border-color: #ef7e93;
+		margin-left: 1rem;
 	}
 
 	input{/*form style code retrived from https://www.w3schools.com/css/css_form.asp*/
@@ -471,6 +581,7 @@ vertical-align: middle;
 		color: #606060;
 		border: 1px solid #ef7e93;
 		padding:0.3rem;
+
 	}
 
 	.header_samples {
