@@ -2,17 +2,14 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="160px" height="160px" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
+	 width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
 <title>cart</title>
 <desc>Created with Sketch.</desc>
-<g id="Page-1">
-	<g id="cart">
-		<g id="Group-7" transform="translate(6.000000, 6.000000)">
-			<circle id="Oval-2" fill="#EF7E93" cx="24.923" cy="99.692" r="8.308"/>
-			<polyline id="Path-3" fill="none" stroke="#EF7E93" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395 
-				20.015,28.395 			"/>
-			<circle id="Oval-2_1_" fill="#EF7E93" cx="91.385" cy="99.692" r="8.308"/>
-		</g>
-	</g>
+<g>
+	<circle fill="#EF7E93" cx="31.923" cy="105.692" r="8.308"/>
+	<polygon fill="none" stroke="#EF7E93" stroke-width="8" stroke-miterlimit="10" points="29.084,85.651 99.318,85.651 
+		113.686,37.395 14.015,37.395 	"/>
+	<circle fill="#EF7E93" cx="98.385" cy="105.692" r="8.308"/>
+	<line fill="none" stroke="#EF7E93" stroke-width="8" stroke-miterlimit="10" x1="29.084" y1="85.651" x2="3.75" y2="6"/>
 </g>
 </svg>
