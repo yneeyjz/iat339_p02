@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/flexbox.css">
 
 </head>
@@ -18,39 +19,15 @@
 
   <header>
 
-    <div class="nav-main box">
-      <div class="nav-logo">
-        <a href="hhh_home.html">
-          <img src="img/logo.png" width="150" alt="logo">
-        </a>
-      </div>
-
-      <div class="nav-grid-left">
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
       <a href="hhh_menu.html" class="nav-main-item">MENU</a>
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div class="nav-grid-right">
-
-      <a href="">
-        <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
-
-      <a href="">
-        <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
-      </a>
-
-    <!--  <input id="search-bar" type="text" />-->
-    </div>
-    </div>
-
-  <!--  <div class="header-text">
-    <h1>Homie Handcraft House</h1>
-
-    <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
-  </div>-->
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
 <!--main deal-->
@@ -138,6 +115,7 @@
       </footer>
 
     </footer>
+      <script src="js/hamburger.js"></script>
 
 </body>
 

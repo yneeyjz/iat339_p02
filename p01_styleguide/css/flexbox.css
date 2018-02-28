@@ -29,10 +29,6 @@
   flex: 1 1 15em;
 }
 
-.image_panel2{
-  flex: 1 1 15em;
-}
-
 /*main body*/
 .side_bar{
   flex: 1 1 15em;
@@ -68,6 +64,15 @@
 
 .grid_small{
   flex: 1 1 20em;
+}
+
+/*description page*/
+.description_left{
+  flex: 1 1 15em;
+}
+
+.description_right{
+  flex: 1 1 15em;
 }
 
 /**/

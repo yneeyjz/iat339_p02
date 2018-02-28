@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
 
@@ -17,8 +18,17 @@
 <body>
 
   <header>
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
+      <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+      <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
+      <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
+      <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
 
-    <div class="nav-main box">
+  <!--  <div class="nav-main box">
       <div class="nav-logo">
         <a href="hhh_home.html">
           <img src="img/logo.png" width="150" alt="logo">
@@ -37,15 +47,15 @@
 
       <a href="hhh_review.html">
         <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
+      </a>  <using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-
 
       <a href="">
         <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
       </a>
 
-    <!--  <input id="search-bar" type="text" />-->
     </div>
-    </div>
+  </div>-->
+
 
 
   </header>
@@ -53,8 +63,10 @@
 
   <div class="container">
     <!-- DEALS PANEL // -->
-    <div class="image-panel">
-      <img src="img/deals.jpg" alt="deals cover">
+    <div class="image-panel panel1">
+        <p class="text-feature">Today's deal</p>
+        <p class="intro_text">Holidays are coming soon! Get extra 10% for the selected items, click here to find out more!</p>
+  <!--    <img src="img/cover1.jpg" alt="deals cover">-->
     </div>
 
     <div class="divider"></div>
@@ -62,7 +74,6 @@
     <!--FEATURES SECTION-->
     <div class="box">
       <div class="box-feature feature1">
-
         <p class="text-feature">What you <br>may like</p>
         <a href="" class="submit_button">view more</a>
       </div>
@@ -70,7 +81,7 @@
       <div class="box-feature feature2">
         <p class="text-feature">Special Gift <br>for Her</p>
         <a href="" class="submit_button">view more</a>
-      </div>
+      </div>-->
     </div>
 
     <div class="divider"></div>
@@ -343,6 +354,8 @@
   </footer>
 
 </footer>
+
+  <script src="js/hamburger.js"></script>
 
 </body>
 

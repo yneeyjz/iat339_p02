@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/tabs.css">
@@ -19,262 +20,67 @@
 
   <header>
 
-    <div class="nav-main box">
-      <div class="nav-logo">
-        <a href="hhh_home.html">
-          <img src="img/logo.png" width="150" alt="logo">
-        </a>
-      </div>
-
-      <div class="nav-grid-left">
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
       <a href="hhh_menu.html" class="nav-main-item">MENU</a>
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div class="nav-grid-right">
-
-      <a href="">
-        <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
-
-      <a href="">
-        <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
-      </a>
-
-    <!--  <input id="search-bar" type="text" />-->
-    </div>
-    </div>
-
-  <!--  <div class="header-text">
-    <h1>Homie Handcraft House</h1>
-
-    <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
-  </div>-->
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
+
+
 <div class="container">
-    <div class="image-panel">
-      <img src="img/deals.jpg" alt="deals cover">
-    </div>
-
-
-  <!--<div class="top-bar">
-    <a href="">
-      <img id="cart-icon" width="25" height="25" src="img/cart-white.svg" alt="cart icon">
-    </a>  <!using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q
-
-    <a href="">
-      <img id="search-icon" width="25" height="25" src="img/search.svg" alt="search icon">
-    </a>
-
-    <input id="search-bar" type="text" />
-
+ <div class="box">
+  <div class="description_left">
+    <img src="img/recipe1_1.jpg">
+    <img src="img/recipe1_2.jpg">
   </div>
--->
 
-
-  <!-- <div class="container">
-    <! DEALS PANEL // -->
-    <!-- <div class="image-panel">
-      <img src="img/deals.jpg" alt="deals cover">
-    </div> -->
-
-    <!-- <div class="divider"></div> -->
-
-    <!--FEATURES SECTION-->
-    <!-- <div class="box">
-      <div class="box-feature feature1">
-
-        <p class="text-feature">What you <br>may like</p>
-        <a href="" class="submit_button">view more</a>
-
-      </div>
-
-      <div class="box-feature feature2">
-        <p class="text-feature">Special Gift <br>for Her</p>
-        <a href="" class="submit_button">view more</a>
-      </div>
-    </div> -->
-<div class="container">
-    <h1>Green linguine</h1><!--http://www.olivemagazine.com/recipes/vegetarian/green-linguine/-->
-    <h3>prep time: 30mins</h3>
-    <p>Check out this super simple linguine recipe. This quick and easy pasta dish is veggie friendly and it's low in calories, a great midweek meal for 2.</p>
+<div class="description_right">
+  <h1>Fettuccine Alfredo</h1>
+  <h4>prep time: 30mins | serving: 2 | level: easy</h4>
+  <p>Check out this super simple fetticchine recipe. This quick and easy pasta dish is ideal for cheese lovers and it's under 500 caleries per serving, a great midweek meal for 2.</p>
 
 
     <h3>Ingredients</h3>
     <ul class="bullet_list">
-      <li>frozen peas 125g</li>
-      <li>frozen broad beans 50g</li>
-      <li>olive oil 1 tbsp</li>
-      <li>leek 1 small, finely sliced</li>
-      <li>dried chilli flakes 1 tsp</li>
-      <li>ricotta 75g</li>
-      <li>parmesan (or veggie alternative) 20g, grated, plus a little extra to serve</li>
+      <li>6 ounces uncooked fettuccine</li>
+      <li>1 tablespoon olive oil</li>
+      <li>1 tablespoon all purpose flour</li>
+      <li>¾ cup low sodium chicken broth</li>
+      <li>¾ cup 1% milk</li>
+      <li>¼ cup Parmesan cheese, grated</li>
+      <li>⅛ teaspoon salt</li>
       <li>lemon 1/2, zested and juiced</li>
-      <li>linguine 150g</li>
-      <li>mint a small bunch, shredded</li>
+      <li>⅛ teaspoon pepper</li>
+      <li>chopped parsley for garnish, if desired</li>
     </ul>
+
 
     <h3>Instructions</h3>
     <ol class="numbered_list">
-      <li>Put the peas and broad beans into a bowl and pour over a kettle of boiling water. Leave for 1 minute, drain, and pod the broad beans. Take about ¾ of the peas and blend in a food processor or with a hand blender with 1 tbsp of water until smooth.</li>
-      <li>Heat the olive oil in a frying pan and fry the leek with some seasoning for 8-10 minutes until soft. Stir in the chilli flakes, broad beans and remaining peas, and fry for 2 minutes. Cool slightly and put into a bowl with the pea purée, ricotta, parmesan, lemon zest and juice and some seasoning, and mix well.</li>
-      <li>Cook the linguine following pack instructions, reserving some cooking water.</li>
-      <li>Tip the pasta back into the pan and add the pea and leek mix, and a splash of the cooking water. Mix well and serve with the mint and more parmesan, if you like.</li>
+      <li>Boil pasta in salted water until al-dente per package instructions.</li>
+      <li>Meanwhile, add olive oil and garlic to a large saute pan. Cook for 1 minute.</li>
+      <li>Whisk in flour and cook an additional minute stirring constantly.</li>
+      <li>Slowly pour in the chicken broth and milk and bring to a simmer. Cook until thickened 3-5 minutes, stir frequently.</li>
+      <li>Take off the heat and stir in Parmesan cheese.</li>
+      <li>Whisk in flour and cook an additional minute stirring constantly.</li>
+      <li>Season with salt and pepper and serve immediately with parsley for garnish if desired.</li>
+
 
     </ol>
-
-
-
-    <!-- <TABS> -->
-    <!-- code from https://www.youtube.com/watch?v=hlQQUmi76jc -->
-  <!--  <ul class="tabs">
-      <li>
-        <input type="radio" name="tabs" id="tab-1" checked>
-        <label for="tab-1">Details</label>
-        <div class="tab-content">
-          <h3>Ingredients</h3>
-          <p>Insert content here 1</p>
-          <br>
-          <h3>Instructions</h3>
-          <p>Insert content here 1</p>
-        </div>
-      </li>
-
-      <li>
-        <input type="radio" name="tabs" id="tab-2">
-        <label for="tab-2">Reviews</label>
-        <div class="tab-content">
-          <p>Insert content here 2</p>
-        </div>
-      </li>
-
-      <li>
-        <input type="radio" name="tabs" id="tab-3">
-        <label for="tab-3">Recipes</label>
-        <div class="tab-content">
-          <div class="box">
-
-            <ul class="products">
-              <li>
-                <!--codes from http://blog.teamtreehouse.com/using-inline-block-to-display-a-product-grid-view-
-                <a href="#" class="product_link">
-                  <img src="img/penne.jpg" alt="">
-                  <h5>Penne Pasta | 500g</h5>
-                  <p>$5.95</p>
-                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  	 width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
-                  <title>cart</title>
-                  <desc>Created with Sketch.</desc>
-                  <g id="Page-1">
-                  	<g id="cart">
-                  		<g id="Group-7" transform="translate(6.000000, 6.000000)">
-                  			<circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
-                  			<polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
-                  				20.015,28.395 			"/>
-                  			<circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
-                  		</g>
-                  	</g>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="product_link">
-                  <img src="img/rotini.jpg" alt="">
-                  <h5>Rotini Pasta | 500g</h5>
-                  <p>$5.95</p>
-                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
-                  <title>cart</title>
-                  <desc>Created with Sketch.</desc>
-                  <g id="Page-1">
-                    <g id="cart">
-                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
-                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
-                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
-                          20.015,28.395 			"/>
-                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
-                      </g>
-                    </g>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="product_link">
-                  <img src="img/fusilli.jpg" alt="">
-                  <h5>Fusilli Pasta | 500g</h5>
-                  <p>$5.95</p>
-                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
-                  <title>cart</title>
-                  <desc>Created with Sketch.</desc>
-                  <g id="Page-1">
-                    <g id="cart">
-                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
-                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
-                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
-                          20.015,28.395 			"/>
-                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
-                      </g>
-                    </g>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="product_link">
-                  <img src="img/penne.jpg" alt="">
-                  <h5>Penne Pasta | 500g</h5>
-                  <p>$5.95</p>
-                  <svg class="cart-button" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="40" height="40" viewBox="-20 -20 160 160" enable-background="new -20 -20 160 160" xml:space="preserve">
-                  <title>cart</title>
-                  <desc>Created with Sketch.</desc>
-                  <g id="Page-1">
-                    <g id="cart">
-                      <g id="Group-7" transform="translate(6.000000, 6.000000)">
-                        <circle id="Oval-2" fill=""cx="24.923" cy="99.692" r="8.308"/>
-                        <polyline id="Path-3" fill="none" stroke="" stroke-width="8" points="0,0 22.084,76.651 92.318,76.651 106.686,28.395
-                          20.015,28.395 			"/>
-                        <circle id="Oval-2_1_" fill="" cx="91.385" cy="99.692" r="8.308"/>
-                      </g>
-                    </g>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </li>
-    </ul>-->
+  </div>
 </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
 </div>
+
+<div class="divider"></div>
 
 <footer>
-  <footer>
+
     <div class="box">
     <div class="footer">
 
@@ -300,9 +106,10 @@
 
     </div>
 
-  </footer>
+
 
 </footer>
+  <script src="js/hamburger.js"></script>
 
 </body>
 

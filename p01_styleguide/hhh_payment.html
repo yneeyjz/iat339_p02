@@ -5,10 +5,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,0">
-  <title>Specific Item</title>
+  <title>Payment</title>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/tabs.css">
@@ -19,79 +20,57 @@
 
   <header>
 
-    <div class="nav-main box">
-      <div class="nav-logo">
-        <a href="hhh_home.html">
-          <img src="img/logo.png" width="150" alt="logo">
-        </a>
-      </div>
-
-      <div class="nav-grid-left">
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
       <a href="hhh_menu.html" class="nav-main-item">MENU</a>
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div class="nav-grid-right">
-
-      <a href="hhh_payment.html">
-        <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
-
-      <a href="">
-        <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
-      </a>
-
-    <!--  <input id="search-bar" type="text" />-->
-    </div>
-    </div>
-
-  <!--  <div class="header-text">
-    <h1>Homie Handcraft House</h1>
-
-    <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
-  </div>-->
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
   <ul class="accordion">
     <h1>Payment</h1>
     <br>
     <li>
-      <a href="#shipping" class="accordion-header">Shipping</a>
+      <a href="#shipping" class="accordion-header">Customer Information</a>
       <div class="accordion-content" id="shipping">
         <form>
-          <br>
-          First name: <br>
-          <input type="text" name="firstname" placeholder="name">
-          <br>
-          <br>
-          Last name: <br>
+          <br><br>
+
+          Name: <br>
           <input type="password" name="password" placeholder="password">
           <br>
           <br>
-          Postal Code: <br>
-          <input type="text" name="postalcode" placeholder="postal code">
-          <br><br>
           Address: <br>
           <input type="text" name="address" placeholder="address">
           <br><br>
+          Postal Code: <br>
+          <input type="text" name="postalcode" placeholder="postal code">
+          <br><br>
+
         </form>
         <br>
-        <a href="#billing" class="proceed_button">Proceed</a>
+        <a href="#billing" class="proceed_button">Next</a>
       </div>
     </li>
 
     <li>
       <a href="#billing" class="accordion-header">Billing</a>
       <div class="accordion-content" id="billing">
+        <br><br>
+        <form>
+            Is billing address same as aboove?
+        <input type="radio"  name="billing" value="yes" checked>Yes</input>
+        <input type="radio" name="billing" value="no">No</input>
+      </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
+
         <form>
           <br>
-          First name: <br>
-          <input type="text" name="firstname" placeholder="name">
           <br>
-          <br>
-          Last name: <br>
+          Name: <br>
           <input type="password" name="password" placeholder="password">
           <br>
           <br>
@@ -128,13 +107,13 @@
         <br><br>
       </form>
       <br>
-      <a href="" class="proceed_button">Proceed</a>
+      <a href="hhh_review.html" class="proceed_button">Proceed</a>
     </div>
   </li>
 </ul>
 
 <footer>
-  <footer>
+
     <div class="box">
     <div class="footer">
 
@@ -160,9 +139,10 @@
 
     </div>
 
-  </footer>
+
 
 </footer>
+  <script src="js/hamburger.js"></script>
 
 </body>
 

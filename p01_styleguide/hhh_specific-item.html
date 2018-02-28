@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/tabs.css">
@@ -19,50 +20,45 @@
 
   <header>
 
-    <div class="nav-main box">
-      <div class="nav-logo">
-        <a href="hhh_home.html">
-          <img src="img/logo.png" width="150" alt="logo">
-        </a>
-      </div>
-
-      <div class="nav-grid-left">
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
       <a href="hhh_menu.html" class="nav-main-item">MENU</a>
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div class="nav-grid-right">
-
-      <a href="hhh_payment.html">
-        <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
-
-      <a href="">
-        <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
-      </a>
-
-    <!--  <input id="search-bar" type="text" />-->
-    </div>
-    </div>
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
 
   </header>
 
 <div class="container">
+  <div class="containter">
   <div class="box">
 
-    <div class="image-panel2">
-      <img src="img/deals.jpg" alt="deals cover">
+    <div class="description_left">
+      <div class="slideshow">
+        <img class="mySlides" src="img/farfalle.jpg" alt="">
+        <img class="mySlides" src="img/farfalle1.jpg" alt="">
+        <img class="mySlides" src="img/farfalle2.jpg" alt="">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <!--slideshow code fromhttps://www.w3schools.com/w3css/w3css_slideshow.asp-->
+
     </div>
 
-<div class="image-panel2">
+<div class="description_right">
     <h1>Egg Linguine</h1>
     <h3>$9.95</h3>
     <p>An elegant fine pasta with a high egg content. Made with a bronze dye to give a desirable rough finish. Slowly dried to produce an excellent quality pasta.</p>
-    <br><br><br>
+    <br>
 
-    <a href="hhh_payment.html" class="recipes_button">Buy</a>
+    <!--number bar-->
+  <input type="number" id="myNumber" value="1" min="0">
+  <!--code from https://www.w3schools.com/jsref/dom_obj_number.asp-->
+
+    <a href="hhh_payment.html" class="payment_button">Buy</a>
 </div>
 </div>
 
@@ -115,19 +111,19 @@
             <ul class="reviews">
               <li>
                 <h2>Megan H.</h2>
-                <p>2 days ago</p>
+                <h4>2 days ago</h4>
                 <p>My all time favourite pasta! Easy to cook and great choice for quick lunch or dinner. I could definately recommend to my friends.</p>
               </li>
 
               <li>
                 <h2>Lindy A.</h2>
-                <p>2017/01/20</p>
+                <h4>2017/01/20</h4>
                 <p>I purchase these pasta all the time and they are amazing. Just don’t boil them for too long like other noodles and that would be fine.</p>
               </li>
 
               <li>
                 <h2>Taylor B.</h2>
-                <p>2017/01/18</p>
+                <h4>2017/01/18</h4>
                 <p>I like the texture of the pasta. Followed the recipes on the site and got pretty good result!</p>
               </li>
             </ul>
@@ -144,7 +140,7 @@
 
             <ul class="products">
               <li>
-                <a href="hhh_specific-item.html" class="product_link">
+                <a href="hhh_specific_recipes.html" class="product_link">
                   <img src="img/recipe4.jpg" alt="">
                   <h5>Linguine with chive sauce <br> and parmesan</h5>
                   <p>prep time: 30mins</p>
@@ -152,7 +148,7 @@
               </li>
 
               <li>
-                <a href="hhh_specific-item.html" class="product_link">
+                <a href="hhh_specific-_recipes.html" class="product_link">
                   <img src="img/recipe1.jpg" alt="">
                   <h5>Linguine with chive sauce <br> and parmesan</h5>
                   <p>prep time: 30mins</p>
@@ -160,7 +156,7 @@
               </li>
 
               <li>
-                <a href="hhh_specific-item.html" class="product_link">
+                <a href="hhh_specific_recipes.html" class="product_link">
                   <img src="img/recipe2.jpg" alt="">
                   <h5>Linguine with chive sauce <br> and parmesan</h5>
                   <p>prep time: 30mins</p>
@@ -168,7 +164,7 @@
               </li>
 
               <li>
-                <a href="hhh_specific-item.html" class="product_link">
+                <a href="hhh_specific_recipes.html" class="product_link">
                   <img src="img/recipe3.jpg" alt="">
                   <h5>Linguine with chive sauce <br> and parmesan</h5>
                   <p>prep time: 30mins</p>
@@ -181,6 +177,7 @@
         </div>
       </li>
     </ul>
+</div>
 </div>
 </div>
 
@@ -211,10 +208,12 @@
 
     </div>
 </div>
-  </footer>
+
 
 </footer>
-
+  <script src="js/hamburger.js"></script>
+  <script src="js/number_bar.js"></script>
+  <script src="js/slideshow.js"></script>
 </body>
 
 

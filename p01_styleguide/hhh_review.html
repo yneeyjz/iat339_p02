@@ -5,12 +5,14 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,0">
-  <title>Breakfast Recipes</title>
+  <title>Review</title>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/tabs.css">
 
 </head>
 
@@ -18,84 +20,161 @@
 
   <header>
 
-    <div class="nav-main box">
-      <div class="nav-logo">
-        <a href="hhh_home.html">
-          <img src="img/logo.png" width="150" alt="logo">
-        </a>
-      </div>
-
-      <div class="nav-grid-left">
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
       <a href="hhh_menu.html" class="nav-main-item">MENU</a>
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div class="nav-grid-right">
-
-      <a href="">
-        <img id="cart-icon" width="30" height="30" src="img/cart-pink.svg" alt="cart icon">
-      </a>  <!--using svg https://www.youtube.com/watch?v=vvuH6qS2M5Q-->
-
-      <a href="">
-        <img id="search-icon" width="30" height="30" src="img/search.svg" alt="search icon">
-      </a>
-
-    <!--  <input id="search-bar" type="text" />-->
-    </div>
-    </div>
-
-  <!--  <div class="header-text">
-    <h1>Homie Handcraft House</h1>
-
-    <p>Homie Handcraft House is an online store that delivers homemade-style pastry such as pasta, cakes, and buns, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
-  </div>-->
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
 
   <div class="container">
     <!-- DEALS PANEL // -->
+  <h1>Review</h1>
 
+  <div class="divider"></div>
 
-
-  </div>
     <div class="box">
 
-      <div class="grid_large">
-      <ul class="products">
-        <li><!--codes from http://blog.teamtreehouse.com/using-inline-block-to-display-a-product-grid-view-->
-          <a href="hhh_specific_recipes.html" class="product_link">
-            <img src="img/penne.jpg" alt="">
-            <h5>Chicken Linguine</h5>
-            <p>$5.95</p>
-          </a>
-        </li>
+      <div class="description_left">
+        <h2>Information</h2>
+        <ul class="accordion_review">
+
+          <br>
+          <li>
+            <a href="#info_review" class="accordion-header">Customer Information</a>
+            <div class="accordion-content" id="info_review">
+              <h3>Name</h3>
+              <p>Jane Peterson</p>
+
+              <h3>Address</h3>
+              <p>1122 Alberta Street</p>
+
+              <h3>Postal code</h3>
+              <p>V1H 2C3</p>
+
+              <br>
+              <a href="#billing_review" class="proceed_button">Next</a>
+                <a href="hhh_payment.html" class="proceed_button">Edit</a>
+            </div>
+          </li>
+
+          <li>
+            <a href="#billing_review" class="accordion-header">Billing</a>
+            <div class="accordion-content" id="billing_review">
+              <h3>Is the billing addres same as above?</h3>
+              <p>No</p>
+
+              <h3>Name</h3>
+              <p>Jane Peterson</p>
+
+              <h3>Address</h3>
+              <p>9900 Ontario Street</p>
+
+              <h3>Postal code</h3>
+              <p>V8N 9N8</p>
+
+              <br>
+              <a href="#payment_review" class="proceed_button">Next</a>
+              <a href="hhh_payment.html" class="proceed_button">Edit</a>
+            </div>
+          </li>
 
         <li>
-          <a href="hhh_specific-item.html" class="product_link">
-            <img src="img/rotini.jpg" alt="">
-            <h5>Chicken Linguine</h5>
-            <p>$5.95</p>
-          </a>
+          <a href="#payment_review" class="accordion-header">Payment</a>
+          <div class="accordion-content" id="payment_review">
+
+
+              <h3>Name on Card: </h3>
+            <p>Jane Peterson</p>
+              <h3>Card Number: </h3>
+            <p>**** **** **** 3981</p>
+
+              <h3>Expiration date: </h3>
+              <p>11/20</p>
+
+              <h3>Security Code: </h3>
+              <p>234</p>
+
+
+            <br>
+            <a href="hhh_payment.html" class="proceed_button">Edit</a>
+          </div>
         </li>
       </ul>
-    </div>
-
-    <div class="grid_small">
-      <h3>Summary</h3>
-      <h4>Subtotal:</h4>
-      <h4>Shipping:</h4>
-      <h4>Handling:</h4>
-      <h3>Total:</h3>
-        <br><br><br>
-
-        <a href="hhh_payment.html" class="recipes_button">Buy</a>
-
-    </div>
 
 
-    </div>
+      </div>
+
+  <div class="description_right">
+      <h2>Summary</h2>
+      <div class="box">
+        <div class="checkout_item">
+        <img src="img/item1.jpg" alt="" width="230px">
+      </div>
+
+      <div class="checkout_item">
+        <h3>Egg Farfalle | 500g</h3>
+        <p>$5.95</p>
+        <h4>Quantity: 1</h4>
+        <br>
+        <a herf="" class="payment_button">Remove</a>
+
+      </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="box">
+        <div class="checkout_item">
+        <img src="img/item3.jpg" alt="" width="230px">
+      </div>
+
+      <div class="checkout_item">
+        <h3>Tri-color Rotoni | 500g</h3>
+        <p>$5.95</p>
+        <h4>Quantity: 1</h4>
+        <br>
+        <a herf="" class="payment_button">Remove</a>
+
+      </div>
+      </div>
+
+
+        <div class="checkout">
+            <div class="divider"></div>
+          <h3 class="checkout_left">Subtotal</h3>
+          <p class="checkout_right">$11.90</p>
+          </div>
+
+          <div class="checkout">
+          <div class="divider"></div>
+            <h3 class="checkout_left">Tax</h3>
+            <p class="checkout_right">$0.83</p>
+            </div>
+
+
+                      <div class="checkout">
+            <div class="divider"></div>
+              <h3 class="checkout_left">Delivery</h3>
+              <p class="checkout_right">$0.00</p></div>
+
+
+                        <div class="checkout">
+                          <div class="divider"></div>
+                <h3 class="checkout_left">Total</h3>
+                <p class="checkout_right"><strong>$12.73</strong></p></div>
+                <br>
+                <div class="divider"></div>
+                <br>
+                  <a herf="hhh_confirm.html" class="payment_button">Proceed</a>
+  </div>
+  </div>
+  </div>
 
 
     <footer>
@@ -128,6 +207,7 @@
       </footer>
 
     </footer>
+      <script src="js/hamburger.js"></script>
 
 </body>
 
