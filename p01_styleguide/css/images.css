@@ -1,0 +1,202 @@
+/*cover photos*/
+
+
+.cover_home{/*home*/
+  background-image: url(../img/cover_home.jpg);
+  background-size:100% ;
+}
+
+.cover_recipes{/*recipe*/
+  background-image: url(../img/cover_recipes.jpg);
+  background-size:100%;
+}
+.cover_giftbox{/*giftbox*/
+  background-image: url(../img/cover_giftbox.jpg);
+  background-size:100%;
+}
+
+.cover_events{
+  background-image: url(../img/cover_events.jpg);
+  background-size:100%;
+}
+
+.cover_menu{/*giftbox*/
+  background-image: url(../img/cover_menu.jpg);
+  background-size:100%;
+}
+
+.cover_egg{/*giftbox*/
+  background-image: url(../img/cover_egg.jpg);
+  background-size:100%;
+}
+
+.cover_quickprep{/*giftbox*/
+  background-image: url(../img/cover_quickprep.jpg);
+  background-size:100%;
+}
+
+/*features*/
+
+.feature1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/feature1.jpeg");
+    /*color overlay code from https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/*/
+  width:400px;
+}
+
+.feature2{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu3.jpg");
+  width:200px;
+}
+
+/*menu category*/
+.menu1{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu1.jpg");
+  width:200px;
+}
+
+.menu2{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu2.jpeg");
+  width:200px;
+}
+
+.menu3{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu3.jpg");
+  width:200px;
+}
+
+.menu4{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu4.jpeg");
+
+  width:200px;
+}
+
+.menu5{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu5.jpeg");
+
+  width:200px;
+}
+
+.menu6{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/menu6.jpeg");
+
+  width:200px;
+}
+
+/*recipes category*/
+.cover_recipe1{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe1.jpg");
+
+  width:200px;
+}
+
+.cover_recipe2{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe2.jpg");
+
+  width:200px;
+}
+
+.cover_recipe3{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe3.jpg");
+
+  width:200px;
+}
+
+.cover_recipe4{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe4.jpg");
+
+
+}
+
+.cover_recipe5{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe5.jpg");
+
+  width:200px;
+}
+
+.cover_recipe6{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/cover_recipe6.png");
+
+  width:200px;
+}
+
+/*gift options*/
+.giftbox1{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/giftbox1.jpg");
+
+  width:200px;
+}
+
+.giftbox2{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/giftbox2.jpg");
+
+  width:200px;
+}
+
+.giftbox3{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/giftbox3.jpg");
+
+  width:200px;
+}
+
+.giftbox4{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../img/giftbox4.jpg");
+
+  width:200px;
+}
+
+/*events*/
+.event1{
+  background-image:
+  url("../img/event1.jpg");
+
+  width:100px;
+}
+
+.event2{
+  background-image:
+  url("../img/event2.jpg");
+
+  width:100px;
+}
+
+.event3{
+  background-image:
+  url("../img/event3.jpg");
+
+  width:100px;
+}

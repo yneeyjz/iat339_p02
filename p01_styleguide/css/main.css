@@ -3,7 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	font-size: 1.25rem;
-		background-color: white;
+		background-color: #fffefd;
 }
 
 .container{
@@ -12,6 +12,15 @@ body {
 	padding-top: 1.5rem;
 
 }
+
+.container2{
+
+	margin-top: 0;
+	padding-top: 2rem;
+
+}
+
+
 
 h1 {
 	font-size: 2.5rem;
@@ -36,11 +45,23 @@ h3 {
 	color:#a3cf83;/*green*/
 }
 
+p.pinkcolor {
+	color: #ef7e93;
+	font-size: 1.5rem;
+	font-weight:bold;
+}
+
+p.blackcolor {
+	color: black;
+	font-size: 1.1rem;
+
+}
+
 h4 {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-bottom: 0.5rem;
 	margin-top:0.8rem;
-	color:#a3cf83;
+	color:#a3cf83;/*green*/
 }
 
 /*header*/
@@ -141,27 +162,7 @@ a {
 
 	}
 
-	.panel1{
-		background-image: url(../img/cover1.jpg);
-		background-size:100% ;
-	}
 
-	.panel2{
-		background-image: url(../img/cover2.jpg);
-		background-size:100%;
-
-
-	}
-	.panel3{
-		background-image: url(../img/cover3.jpg);
-		background-size:100%;
-
-	}
-
-.panel2 img{
-	position:absolute;
-	margin-top: -25%;
-}
 
 
 /*item page*/
@@ -186,7 +187,7 @@ display: table;
 
 .w3-button{
 	color:#ef7e93;
-	border: 1.5px solid #ef7e93;
+	border: 1.5px solid white;
 	padding:0.9rem;
 
 	position: absolute;
@@ -198,6 +199,7 @@ display: table;
 .w3-button:hover{
 	color:white;
 	background-color: #ef7e93;
+	border: 1.5px solid #ef7e93;
 	padding:0.9rem;
 }
 
@@ -229,10 +231,16 @@ display: table;
 		background-image: url(../img/about.png);
 	}
 
-	.about_text{
-		font-size: 1.2rem;
-		padding:4.5rem;
+	p.about_text{
+
+		padding:4rem;
 		padding-bottom: 1rem;
+	}
+
+	h1.about_text{
+
+		padding:4rem;
+		padding-bottom: 0.2rem;
 	}
 
 
@@ -263,7 +271,7 @@ display: table;
 		border-width: 0.15rem;
 		padding: 0.6rem 1rem;
 		text-decoration:none;
-		margin-bottom:0;
+		margin-top:5rem;
 	}
 
 	.payment_button:hover, .buttonfocus {
@@ -276,6 +284,7 @@ display: table;
 
 		color:#ef7e93;
 		text-decoration:underline;
+		margin-right: 1rem;
 
 	}
 
@@ -399,57 +408,8 @@ a.page{
 		opacity: 0.5;
 	}
 
-	.feature1{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-			url("../img/feature1.jpeg");
-			/*color overlay code from https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/*/
-		width:400px;
-	}
 
-	.feature2{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu3.jpg");
-		width:200px;
-	}
-
-	.menu2{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu2.jpeg");
-		width:200px;
-	}
-
-	.menu3{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu3.jpg");
-		width:200px;
-	}
-
-	.menu4{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu4.jpeg");
-
-		width:200px;
-	}
-
-	.menu5{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu5.jpeg");
-
-		width:200px;
-	}
-
-	.menu6{
-		background-image:
-		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-		url("../img/menu6.jpeg");
-
-		width:200px;
-	}
+	
 
 	p{
 		margin-top:0.1rem;
@@ -738,6 +698,19 @@ padding:1rem;
 		margin-right:1rem;
 		margin-bottom: 0;
 
+	}
+
+	select {
+		color:#ef7e93;
+		font-size: 15px;
+		border-color: #ef7e93;
+		background-color: white;
+		padding:1rem;
+	}
+
+	option{
+		background-color: white;
+		padding:1rem;
 	}
 
 	.header_samples {

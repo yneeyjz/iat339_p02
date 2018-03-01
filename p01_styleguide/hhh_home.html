@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/images.css">
 
 </head>
 
@@ -20,9 +21,11 @@
   <header>
     <div class="topnav" id="myTopnav">
       <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
-      <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
+        <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+          <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
@@ -35,29 +38,33 @@
   <div class="container">
 
     <!-- DEALS PANEL // -->
-    <div class="image-panel panel1">
+    <a href="hhh_events.html">
+    <div class="image-panel cover_home">
+
       <div class="menu_border">
-        <p class="text-feature">Today's deal</p>
-        <p class="intro_text">Holidays are coming soon! Get extra 10% for the selected items, click here to find out more!</p>
-  <!--    <img src="img/cover1.jpg" alt="deals cover">-->
+        <p class="text-feature">HAPPY EATING !</p>
+        <p class="intro_text">Get extra 10% for the selected items, click here to find out more!</p>
+
     </div>
   </div>
+  </a>
 
     <div class="divider"></div>
 
     <!--FEATURES SECTION-->
     <div class="box">
       <div class="box-feature feature1">
+
       <div class="menu_border">
-        <p class="text-feature">What you <br>may like</p>
-        <a href="" class="submit_button">view more</a>
+        <p class="text-feature">WHAT YOU<br>MAY LIKE</p>
+        <a href="hhh_specific_category.html" class="submit_button">view more</a>
       </div>
     </div>
 
       <div class="box-feature feature2">
         <div class="menu_border">
-        <p class="text-feature">Special Gift <br>for Her</p>
-        <a href="" class="submit_button">view more</a>
+        <p class="text-feature">SPECIAL<br>FOR HER</p>
+        <a href="hhh_giftbox.html" class="submit_button">view more</a>
       </div>
     </div>
     </div>
@@ -73,7 +80,7 @@
 
         <li><!--farfalle-->
           <!--codes from http://blog.teamtreehouse.com/using-inline-block-to-display-a-product-grid-view-->
-          <a href="hhh_specific-item.html" class="product_link">
+          <a href="hhh_specific_item.html" class="product_link">
             <img src="img/item1.jpg" alt="">
             <h5>Egg Farfalle | 500g</h5>
             <p>$5.95</p>
@@ -117,7 +124,7 @@
         </li>
 
         <li><!--rotini pasta-->
-          <a href="#" class="product_link">
+          <a href="hhh_specific_item.html" class="product_link">
             <img src="img/item3.jpg" alt="">
             <h5>Tri-colour Rotini | 500g</h5>
             <p>$6.95</p>
@@ -161,7 +168,7 @@
         </li>
 
         <li><!--bow tie-->
-          <a href="#" class="product_link">
+          <a href="hhh_specific_item.html" class="product_link">
             <img src="img/item2.jpg" alt="">
             <h5>Egg Fusilli | 500g</h5>
             <p>$5.95</p>
@@ -205,7 +212,7 @@
         </li>
 
         <li><!--fusilli-->
-          <a href="#" class="product_link">
+          <a href="hhh_specific_item.html" class="product_link">
             <img src="img/item4.jpg" alt="">
             <h5>Penne Pasta | 500g</h5>
             <p>$5.95</p>
@@ -265,7 +272,7 @@
 
       <ul class="products">
         <li>
-          <a href="hhh_specific-item.html" class="product_link">
+          <a href="hhh_specific_recipes.html" class="product_link">
             <img src="img/recipe1.jpg" alt="">
             <h5>Healthy olive spaghetti <br>with peas and beets</h5>
             <p>prep time: 30mins</p>
@@ -273,7 +280,7 @@
         </li>
 
         <li>
-          <a href="hhh_specific-item.html" class="product_link">
+          <a href="hhh_specific_recipes.html" class="product_link">
             <img src="img/recipe2.jpg" alt="">
             <h5>Creamy angel hair <br>with three cheese sause</h5>
             <p>prep time: 30mins</p>
@@ -281,15 +288,15 @@
         </li>
 
         <li>
-          <a href="hhh_specific-item.html" class="product_link">
+          <a href="hhh_specific_recipes.html" class="product_link">
             <img src="img/recipe3.jpg" alt="">
-            <h5>Cherry tomatoes and <br>spinach toss on bowties</h5>
+            <h5>Healthy green<br>pasta salad</h5>
             <p>prep time: 30mins</p>
           </a>
         </li>
 
         <li>
-          <a href="hhh_specific-item.html" class="product_link">
+          <a href="hhh_specific_recipes.html" class="product_link">
             <img src="img/recipe4.jpg" alt="">
             <h5>Linguine with chive sauce <br> and parmesan</h5>
             <p>prep time: 30mins</p>

@@ -5,61 +5,95 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,0">
-  <title>About</title>
+  <title>Specific Giftbox</title>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/tabs.css">
 
 </head>
 
 <body>
 
   <header>
+
     <div class="topnav" id="myTopnav">
       <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
 
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
         <a href="hhh_menu.html" class="nav-main-item">MENU</a>
-        <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
+          <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
-<!--main deal-->
-
-  <div class="container">
-    <!-- DEALS PANEL // -->
-  <div class="box">
-    <div class="description_left">
-      <h1 class="about_text">Gioia Handcraft House</h1>
-
-      <p class="about_text">Gioia Handcraft House is an online store that delivers homemade-style pasta, pastry, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.
-      </br><br>
-      We are more than happy to fulfill your pasta and catering needs!</p></div>
 
 
-
-    <div class="description_right">
-      <img src="img/about.jpg" alt="">
-    </div>
+<div class="container">
+ <div class="box">
+  <div class="description_left">
+    <img src="img/gift1.jpg">
 
   </div>
 
+<div class="description_right">
+  <h1>Picnic Pack</h1>
+  <h3>$19.95</h3>
+  <p>Simple gift beautifully packaged with a picnic basket. This giftset includes one bottle of our special sparkling drink perfect to pair with your favorite pasta, one type of pasta from the Classic Egg Collection, and one sauce from the Classic Collection.</p>
 
 
-    <!--FEATURES SECTION-->
+    <h2>Select gifts</h2>
 
+    <h3>Pasta:</h3>
+    <select >
+    <option value="angelhair">Angel hair</option>
+  <option value="farfalle">Farfalle</option>
+  <option value="fettuccine">Fettuccine</option>
+  <option value="linguine">Linguine</option>
+</select>
+<br>
+  <h3>Sauce:</h3>
+  <select >
+  <option value="marinara">Marinara</option>
+<option value="Alfredo">Alfredo</option>
+<option value="Checca">Checca</option>
+<option value="Bolognese">Bolognese</option>
 
+</select><br>
+
+  <h3>Special Sparklin:</h3>
+  <select>
+  <option value="original">Original</option>
+<option value="apple">Apple</option>
+<option value="grape">Grape</option>
+<option value="berry">Berry</option>
+
+</select>
+<br><br>
+
+<!--number bar-->
+<input type="number" id="myNumber" value="1" min="0">
+<!--code from https://www.w3schools.com/jsref/dom_obj_number.asp-->
+<div class="container2">
+<a href="hhh_payment.html" class="payment_button">Buy</a>
+<a href="hhh_cart.html" class="payment_button">Add to cart</a>
 </div>
 
+</div>
+</div>
+</div>
+
+
+<div class="divider"></div>
+
 <footer>
-  <footer>
+
     <div class="box">
     <div class="footer">
 
@@ -85,7 +119,7 @@
 
     </div>
 
-  </footer>
+
 
 </footer>
   <script src="js/hamburger.js"></script>

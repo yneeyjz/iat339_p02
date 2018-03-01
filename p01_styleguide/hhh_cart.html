@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+  <title>Cart</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/res_header.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/tabs.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="topnav" id="myTopnav">
+      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
+
+      <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
+      <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
+        <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+          <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
+      <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  </header>
+
+
+  <div class="container">
+    <!-- DEALS PANEL // -->
+    <h1>Cart</h1>
+
+    <div class="divider"></div>
+
+    <div class="box">
+
+
+
+      <div class="description_left">
+        <h2>Items</h2>
+
+        <div class="box">
+          <div class="checkout_item">
+            <img src="img/checkout1.jpg" alt="" width="230px">
+          </div>
+
+          <div class="checkout_item">
+            <h3>Egg Fafalle</h3>
+            <p>$5.95 | 500g</p>
+            <h4>Quantity</h4>
+            <input type="number" id="myNumber" value="1" min="0">
+            <br><br>
+            <a href="" class="task_button">Remove</a>
+                <a href="hhh_specific_item.html" class="task_button">Edit</a>
+
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+
+        <div class="box">
+          <div class="checkout_item">
+            <img src="img/checkout2.jpg" alt="" width="230px">
+          </div>
+
+          <div class="checkout_item">
+            <h3>Picnic Pack</h3>
+            <p>$19.95</p>
+            <h4>Quantity</h4>
+            <input type="number" id="myNumber" value="1" min="0">
+            <br><br>
+            <a href="" class="task_button">Remove</a>
+            <a href="hhh_specific_giftbox.html" class="task_button">Edit</a>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="description_right">
+        <h2>Summary</h2>
+        <div class="checkout">
+
+          <h3 class="checkout_left">Subtotal</h3>
+          <p class="checkout_right">$25.90</p>
+        </div>
+
+        <div class="checkout">
+          <div class="divider"></div>
+          <h3 class="checkout_left">Tax</h3>
+          <p class="checkout_right">$1.83</p>
+        </div>
+
+
+        <div class="checkout">
+          <div class="divider"></div>
+          <h3 class="checkout_left">Delivery</h3>
+          <p class="checkout_right">$0.00</p></div>
+
+
+          <div class="checkout">
+            <div class="divider"></div>
+            <h3 class="checkout_left">Total</h3>
+            <p class="checkout_right"><strong>$27.71</strong></p></div>
+            <br>
+            <div class="divider"></div>
+            <br>
+              <a href="hhh_payment.html" class="proceed_button" style="float:right">Proceed</a>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+      <footer>
+        <footer>
+          <div class="box">
+            <div class="footer">
+
+              <p>890 Westminster Road<br>
+                Vancouver, BC V1B 1C2</p>
+                <p>contact: hello@hhh.com<br>
+                  t: 604 809 0990<br>
+                  e: hello@hhh.com</p>
+                </div>
+
+                <div class="footer">
+                  <a href="" class="footer_link">About</a>
+                  <a href="" class="footer_link">Menu</a>
+                  <a href="" class="footer_link">Giftbox</a>
+                  <a href="" class="footer_link">Recipes</a>
+
+                </div>
+
+                <div class="footer">
+                  <p>contact: hello@hhh.com</p>
+                </div>
+
+
+              </div>
+
+            </footer>
+
+          </footer>
+          <script src="js/hamburger.js"></script>
+
+        </body>
+
+
+        </html>

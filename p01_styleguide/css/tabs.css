@@ -124,7 +124,7 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
 }
 
 .accordion-content:target {
-  height: 450px;
+  height: 520px;
   background-color: white;
   border: 1.5 solid #ef7e93;
   overflow-y: scroll;

@@ -22,9 +22,11 @@
 
     <div class="topnav" id="myTopnav">
       <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
-      <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
+        <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+          <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
@@ -41,14 +43,18 @@
           <br><br>
 
           Name: <br>
-          <input type="password" name="password" placeholder="password">
+          <input type="text" name="name" placeholder="Firstname Lastname">
+          <br>
+          <br>
+          Email: <br>
+          <input type="text" name="email" placeholder="xxxxx@xxxxx.xxx">
           <br>
           <br>
           Address: <br>
           <input type="text" name="address" placeholder="address">
           <br><br>
           Postal Code: <br>
-          <input type="text" name="postalcode" placeholder="postal code">
+          <input type="text" name="postalcode" placeholder="A1A 1A1">
           <br><br>
 
         </form>
@@ -62,7 +68,7 @@
       <div class="accordion-content" id="billing">
         <br><br>
         <form>
-            Is billing address same as aboove?
+            Is billing address same as above?
         <input type="radio"  name="billing" value="yes" checked>Yes</input>
         <input type="radio" name="billing" value="no">No</input>
       </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
@@ -71,18 +77,20 @@
           <br>
           <br>
           Name: <br>
-          <input type="password" name="password" placeholder="password">
+          <input type="text" name="name" placeholder="Firstname Lastname">
           <br>
           <br>
-          Postal Code: <br>
-          <input type="text" name="postalcode" placeholder="postal code">
-          <br><br>
+
           Address: <br>
           <input type="text" name="address" placeholder="address">
           <br><br>
+
+          Postal Code: <br>
+          <input type="text" name="postalcode" placeholder="A1A 1A1">
+          <br><br>
         </form>
         <br>
-        <a href="#payment" class="proceed_button">Proceed</a>
+        <a href="#payment" class="proceed_button">Next</a>
       </div>
     </li>
 
@@ -90,13 +98,22 @@
     <a href="#payment" class="accordion-header">Payment</a>
     <div class="accordion-content" id="payment">
       <form>
+        <br><br>
+          Card type:<br>
+      <input type="radio"  name="card" value="visa" checked>Visa</input>
+      <input type="radio" name="card" value="mastercard">MasterCard</input>
+        <input type="radio" name="card" value="americanexpress">AmericanExpress</input>
+
+    </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
+
+      <form>
         <br>
         Name on Card: <br>
-        <input type="text" name="creditcard" placeholder="name">
+        <input type="text" name="creditcard" placeholder="Firstname Lastname">
         <br>
         <br>
         Card Number: <br>
-        <input type="text" name="cardnumber" placeholder="card number">
+        <input type="text" name="cardnumber" placeholder="#### #### #### ####">
         <br>
         <br>
         Expiration date: <br>
