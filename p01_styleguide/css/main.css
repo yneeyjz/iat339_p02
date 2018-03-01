@@ -3,11 +3,14 @@ body {
 	margin:0;
 	padding:0;
 	font-size: 1.25rem;
+		background-color: white;
 }
 
 .container{
-	padding:2em;
-	padding-top: 0;
+	margin:2em;
+	margin-top: 0;
+	padding-top: 1.5rem;
+
 }
 
 h1 {
@@ -127,11 +130,13 @@ a {
 
 	.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
 
-		width:100%;
+
 		height:20rem;
 		overflow:hidden;
 		position: relative;
 		color:white;
+		margin:1rem;
+		min-width:15rem;
 
 
 	}
@@ -183,14 +188,27 @@ display: table;
 	color:#ef7e93;
 	border: 1.5px solid #ef7e93;
 	padding:0.9rem;
-	margin-top:0.5rem;
-	margin-right: 1rem;
+
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+
 }
 
 .w3-button:hover{
 	color:white;
 	background-color: #ef7e93;
 	padding:0.9rem;
+}
+
+.w3-display-left{
+	position: absolute;
+	left:0;
+}
+
+.w3-display-right{
+	position: absolute;
+	right:0;
 }
 
 
@@ -234,9 +252,7 @@ display: table;
 
 	.intro_text{
 		font-size: 1.5rem;
-		padding:4.5rem;
-		padding-left:3.3rem;
-		padding-bottom: 1rem;
+
 	}
 
 
@@ -249,6 +265,27 @@ display: table;
 		text-decoration:none;
 		margin-bottom:0;
 	}
+
+	.payment_button:hover, .buttonfocus {
+		background-color:#ef7e93;
+		color:white;
+		border-color:#ef7e93;
+	}
+
+	.task_button{/*code from lab exercise*/
+
+		color:#ef7e93;
+		text-decoration:underline;
+
+	}
+
+	.task_button:hover, .buttonfocus {
+
+		color:#a3cf83;
+		text-decoration:underline;
+	}
+
+
 
 	.recipes_button:hover, .buttonfocus {
 		background-color:#ef7e93;
@@ -271,9 +308,11 @@ display: table;
 		zoom:1;
 		vertical-align: middle;
 		color:white;
-		height: 350px;
-		margin:0.7em;
+		height: 250px;
+		margin:0.5em;
 		position:relative;
+
+
 	}
 
 	.grid_small{
@@ -281,9 +320,24 @@ display: table;
 		zoom:1;
 		vertical-align: middle;
 		color:white;
-		height: 350px;
-		margin:0.7em;
+		height: 250px;
+		margin:0.5em;
 		position:relative;
+
+
+	}
+
+	.menu_border{
+
+		position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+		margin-left: 3rem;
+		margin-right: 3rem;
+
+
+
+
 	}
 
 	.divider{
@@ -328,14 +382,17 @@ a.page{
 	}
 
 
-	p.text-feature{
+	.text-feature{
 
-		font-size: 3rem;
-		position:relative;
-		margin-left:3rem;
-		top:40%;
-		transform:translateY(-50%);/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
+		font-size: 2.5rem;
+		color:white;
+		bottom:0;
+
+
+		/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
 	}
+
+
 
 	.overlay{
 		background: pink;
@@ -395,7 +452,7 @@ a.page{
 	}
 
 	p{
-		margin-top:0.2rem;
+		margin-top:0.1rem;
 	}
 	p,code,ol{
 		max-width: 30rem;
@@ -581,11 +638,7 @@ a.page{
 		padding: 0.3rem 0.8rem;
 		text-decoration:none;
 
-
-		margin-left: 3rem;
-
-		position:absolute;
-
+		top:0;
 		bottom:3.5rem;/*vertical align refered from https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block/25799339*/
 
 

@@ -4,9 +4,10 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
 .tabs {
   list-style: none;
   padding: 0rem;
-  margin: 1rem 0;
+  margin:1rem 1rem 0 ;
   position: relative;
   height: 420px;
+  max-width: 70rem;
 
 }
 
@@ -14,7 +15,7 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
   content: "";
   clear: both;
   display: block;
-  height: 320px;
+  height: 350px;
 }
 
 .tabs li {
@@ -128,4 +129,10 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
   border: 1.5 solid #ef7e93;
   overflow-y: scroll;
   width: 100%;
+}
+
+.review_container{
+  margin: 1.5rem;
+  margin-top: 2rem;
+
 }

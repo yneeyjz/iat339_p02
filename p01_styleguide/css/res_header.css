@@ -1,8 +1,10 @@
+/*top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #ffffff;
+    background-color: white;
     overflow: hidden;
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
 /* Style the links inside the navigation bar */
@@ -35,18 +37,21 @@
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   text-align: center;
+  
 }
 
 
 .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
 	color: #ef7e93;
 	text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 /* Add an active class to highlight the current page */
 .active {
       padding: 1.1rem 2rem;
     background-color: white;
     color: white;
+
 }
 
 /* Hide the link that should open and close the topnav on small screens */
