@@ -25,7 +25,7 @@ body {
 h1 {
 	font-size: 2.5rem;
 	margin-bottom: 0;
-	margin-top:3rem;
+	margin-top:0rem;
 	color: #ef7e93;/*pink*/
 }
 
@@ -43,6 +43,12 @@ h3 {
 	font-size: 1.5rem;
 	margin-bottom: 0;
 	color:#a3cf83;/*green*/
+	text-transform: uppercase;
+}
+
+.navbar{
+	padding:2rem;
+
 }
 
 p.pinkcolor {
@@ -62,11 +68,12 @@ h4 {
 	margin-bottom: 0.5rem;
 	margin-top:0.8rem;
 	color:#a3cf83;/*green*/
+
 }
 
 /*header*/
 header {
-	background-color: #FFFDF4;
+	background-color: white;
 	padding:0;
 	/*border-bottom: 1px solid #f2f2f2;*/
 }
@@ -409,13 +416,13 @@ a.page{
 	}
 
 
-	
+
 
 	p{
 		margin-top:0.1rem;
 	}
 	p,code,ol{
-		max-width: 30rem;
+		max-width: 35rem;
 	}
 
 	ul {
@@ -583,7 +590,7 @@ a.page{
 
 	code, samp {
 		display: block;
-		background-color:#fdf7e6;
+		background-color:#f1f1f1;
 		padding: 0.8rem;
 	}
 
@@ -723,40 +730,31 @@ padding:1rem;
 	.color{/*codes of color swatches retrieved from https://stackoverflow.com/questions/11226126/how-can-i-create-a-small-color-box-using-html-and-css/11226586*/
 		display: inline-block;
 		width: 90px;
-		height: 50px;
+		height: 10px;
+		margin:3rem;
 		padding:1rem;
 		text-align: center;
-		font-weight:bold;
+		font-size: 1rem;
 
 
-	}
-
-	.light_pink {
-		background: #f6cac6;
-		color: white;
 
 	}
-	.light_yellow {
-		background: #FFFDF4;
-		color: #bcbcbc;
-	}
 
-	.yellow {
-		background: #fae192;
-		color: white;
-	}
 
 	.pink {
 		background: #ef7e93;
 		color: white;
 	}
-	.orange {
-		background: #ff8f29;
-		color: white;
-	}
+
 	.green {
 		background: #a3cf83;
 		color: white;
+	}
+
+	.white {
+		background: #ffffff;
+		color: black;
+		border: 1px solid black;
 	}
 
 	.container .block {
