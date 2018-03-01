@@ -259,7 +259,7 @@ vertical-align: middle;
 
 	.recipes_intro_left{
 		display:inline-block;
-		height:350px;
+		height:auto;
 		text-align: center;
 		background-color: #FFFDF4;
 		/* background-repeat: no-repeat; */
@@ -275,7 +275,7 @@ vertical-align: middle;
 
 	.recipes_intro_text{
 		font-size: 1.5rem;
-		padding:4.5rem;
+		padding:1.5rem;
 		padding-bottom: 1rem;
 	}
 
@@ -338,7 +338,7 @@ vertical-align: middle;
 	.box-feature{
 		display:inline-block;
 		zoom:1;
-		vertical-align: middle;
+		/* vertical-align: middle; */
 		color:white;
 		height: 250px;
 		margin:0.5em;
@@ -346,10 +346,6 @@ vertical-align: middle;
 		background-color: pink;
 
 	}
-/*
-	.box-feature:hover{
-		height: 400px;
-	} */
 
 	p.text-feature{
 
@@ -692,7 +688,19 @@ vertical-align: middle;
 
 	}
 
+.summary{
+	float: left;
+	width: 100%;
+	margin-left:5rem;
+}
 
+.summary h2{
+	margin: 2rem 0;
+}
+
+.summary a{
+	margin-bottom: 2rem;
+}
 
 	form {
 		color:#ef7e93;
@@ -785,6 +793,8 @@ vertical-align: middle;
 		color:white;
 		margin:0;
 		padding: 2rem;
+		bottom: 0;
+		position: relative;
 	}
 
 	.footer-link{
