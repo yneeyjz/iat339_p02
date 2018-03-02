@@ -3,7 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	font-size: 1.25rem;
-		background-color: #fffefd;
+	background-color: #fffefd;
 }
 
 .container{
@@ -14,13 +14,10 @@ body {
 }
 
 .container2{
-
 	margin-top: 0;
 	padding-top: 2rem;
 
 }
-
-
 
 h1 {
 	font-size: 2.5rem;
@@ -46,6 +43,14 @@ h3 {
 	text-transform: uppercase;
 }
 
+h4 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	margin-top:0.8rem;
+	color:#a3cf83;/*green*/
+
+}
+
 .navbar{
 	padding:2rem;
 
@@ -63,36 +68,26 @@ p.blackcolor {
 
 }
 
-h4 {
-	font-size: 1.2rem;
-	margin-bottom: 0.5rem;
-	margin-top:0.8rem;
-	color:#a3cf83;/*green*/
+/*header*/
 
+a {
+	color: #000;
 }
 
-/*header*/
+/* header */
 header {
 	background-color: white;
 	padding:0;
 	/*border-bottom: 1px solid #f2f2f2;*/
 }
 
-a {
-  color: #000;
-}
-
-/* header */
-
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
 }
-
-
 
 .nav-main{
 	background-color: white;
@@ -105,9 +100,6 @@ a {
 	padding:5rem;
 }
 
-
-
-
 .nav-grid-left{
 	margin:auto;
 	width:50%;
@@ -117,47 +109,8 @@ a {
 
 }
 
-#search-bar{
-	background:  #fffdf4;
-	border-bottom: 1.5px solid #ef7e93;
-	color: #ef7e93;
-	font-size:0.8em;
-	float:right;
-	margin-right:0.5rem;
-	top:10%;
-}
-
-#search-icon{
-	float:right;
-	margin-right:1rem;
-	position:relative;
-
-	top:10%;
-	/*transform:translateY(-50%);*/
-}
-
-#cart-icon{
-	float:right;
-	margin-right:1rem;
-	position:relative;
-	top:10%;
-	/*transform:translateY(-50%);*/
-}
-
-.item-icon-containter{
-	display: block;
-	margin-left: auto;
-	    margin-right: auto;
-			margin-top: 0;
-			margin-bottom: 1rem;
-}
-
-#search-bar:focus, input:focus{
-	outline: none;
-	}/*remove input box https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome*/
 
 	.image-panel {/*faux image crop refered from https://spigotdesign.com/crop-any-size-image-with-css/*/
-
 
 		height:20rem;
 		overflow:hidden;
@@ -166,64 +119,56 @@ a {
 		margin:1rem;
 		min-width:15rem;
 
-
 	}
 
+	/*item page*/
 
-
-
-/*item page*/
-
-.form-group {
-	width: 30%;
-	margin: 30px;
-	.glyphicon {
+	.form-group {
+		width: 30%;
+		margin: 30px;
 		color: #95d7fc;
+
 	}
-}
 
-.btn_number{
-	color:#ef7e93;
-	border-color: #ef7e93;
-	margin-left: 1rem;
-}
+	.btn_number{
+		color:#ef7e93;
+		border-color: #ef7e93;
+		margin-left: 1rem;
+	}
 
-.slideshow{
-display: table;
-}
+	.slideshow{
+		display: table;
+	}
 
-.w3-button{
-	color:#ef7e93;
-	border: 1.5px solid white;
-	padding:0.9rem;
+	.w3-button{
+		color:#ef7e93;
+		border: 1.5px solid white;
+		padding:0.9rem;
 
-	position: absolute;
-	top: 50%;
-	transform:translateY(-50%);
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%);
 
-}
+	}
 
-.w3-button:hover{
-	color:white;
-	background-color: #ef7e93;
-	border: 1.5px solid #ef7e93;
-	padding:0.9rem;
-}
+	.w3-button:hover{
+		color:white;
+		background-color: #ef7e93;
+		border: 1.5px solid #ef7e93;
+		padding:0.9rem;
+	}
 
-.w3-display-left{
-	position: absolute;
-	left:0;
-}
+	.w3-display-left{
+		position: absolute;
+		left:0;
+	}
 
-.w3-display-right{
-	position: absolute;
-	right:0;
-}
+	.w3-display-right{
+		position: absolute;
+		right:0;
+	}
 
-
-
-
-/*about page*/
+	/*about page*/
 
 	.about_left{
 		display:inline-block;
@@ -251,25 +196,7 @@ display: table;
 	}
 
 
-	.recipes_intro_left{
-		display:inline-block;
-		height:350px;
-		text-align: center;
-		background-color: #FFFDF4;
-	}
-
-	.recipes_intro_right{
-		display:inline-block;
-		width:70%;
-		height:350px;
-		background-image: url(../img/feature1.jpeg);
-	}
-
-	.intro_text{
-		font-size: 1.5rem;
-
-	}
-
+/*buttons*/
 
 	.payment_button{/*code from lab exercise*/
 		border-color:#ef7e93;
@@ -303,22 +230,6 @@ display: table;
 
 
 
-	.recipes_button:hover, .buttonfocus {
-		background-color:#ef7e93;
-		color:white;
-		border-color:#ef7e93;
-	}
-
-	.recipes-category{
-		display:inline-block;
-		zoom:1;
-		vertical-align: middle;
-		color:white;
-		height: 250px;
-		margin:0.5em;
-		position:relative;
-	}
-
 	.grid_large{
 		display:inline-block;
 		zoom:1;
@@ -346,8 +257,8 @@ display: table;
 	.menu_border{
 
 		position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
+		top: 50%;
+		transform:translateY(-50%);
 		margin-left: 3rem;
 		margin-right: 3rem;
 
@@ -368,20 +279,20 @@ display: table;
 
 		display: block;
 		margin-left: auto;
-				margin-right: auto;
-				margin-top: 0;
-				margin-bottom: 1rem;
-				text-align: center;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 
-a.page{
+	a.page{
 		color: #ef7e93;
 		transition: color 0.5s;
 		text-decoration:none;
 	}
 
-.page:active, .page:hover, .page:focus {
-	text-decoration:underline;
+	.page:active, .page:hover, .page:focus {
+		text-decoration:underline;
 	}
 
 	.box-feature{
@@ -487,32 +398,32 @@ a.page{
 		text-decoration: underline;
 	}
 
-/*description*/
-.description_left{
-	display:inline-block;
-	/*background-image: url(../img/cover1.jpg);
-	background-repeat: no-repeat;
-  background-size: 100%;*/
-	zoom:1;
-	height: auto;
-	min-height: 10rem;
-	margin:1rem;
+	/*description*/
+	.description_left{
+		display:inline-block;
+		/*background-image: url(../img/cover1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;*/
+		zoom:1;
+		height: auto;
+		min-height: 10rem;
+		margin:1rem;
 
-	position:relative;
+		position:relative;
 
-}
+	}
 
-.description_right{
-	display:inline-block;
-	zoom:1;
-	vertical-align: middle;
-	height: auto;
-	margin:2em;
-	margin-top:1rem;
-	position:relative;
-}
+	.description_right{
+		display:inline-block;
+		zoom:1;
+		vertical-align: middle;
+		height: auto;
+		margin:2em;
+		margin-top:1rem;
+		position:relative;
+	}
 
-/*review page*/
+	/*review page*/
 
 	.reviews li {
 		display: inline-block;
@@ -553,7 +464,7 @@ a.page{
 
 	.products li:hover {/*hover code from https://stackoverflow.com/questions/1988122/changing-font-color-of-a-contained-within-li-but-on-hover-over-li*/
 		/*background-color: #ef7e93;*/
-		 outline: 5px solid #ef7e93;;
+		outline: 5px solid #ef7e93;;
 	}
 
 	a.product_link {
@@ -668,27 +579,27 @@ a.page{
 		border-color:#ef7e93;
 
 	}
-/*checkout*/
-.checkout{
-padding:1rem;
-}
+	/*checkout*/
+	.checkout{
+		padding:1rem;
+	}
 
-.checkout_left{
-	display:inline-block;
-	float:left;
-	margin:0;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	.checkout_left{
+		display:inline-block;
+		float:left;
+		margin:0;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 
-}
+	}
 
-.checkout_right{
+	.checkout_right{
 
-	float:right;
-	margin:0;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
+		float:right;
+		margin:0;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 
 
 	form {
@@ -782,7 +693,7 @@ padding:1rem;
 		background-color: #ef7e93;
 		color:white;
 		margin:0;
-		padding: 2rem;
+		padding: 3rem;
 	}
 
 	.footer{
@@ -798,4 +709,4 @@ padding:1rem;
 
 	.footer_link:active, .footer_link:hover, .footer_link:focus {
 		text-decoration:underline;
-		}
+	}

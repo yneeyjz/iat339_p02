@@ -2,31 +2,31 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: white;
-    overflow: hidden;
-      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-
-    display: block;
-    color: #ef7e93;
-    text-align: center;
+  
+  display: block;
+  color: #ef7e93;
+  text-align: center;
 
 }
 
 /* Change the color of links on hover */
 .topnav .nav-main-item:hover {
-    background-color: #ef7e93;
-    color: white;
-    text-decoration: none;
+  background-color: #ef7e93;
+  color: white;
+  text-decoration: none;
 }
 
 .topnav .icon:hover {
-    background-color: #ef7e93;
-    color: white;
-    text-decoration: none;
+  background-color: #ef7e93;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-main-item, .icon{
@@ -43,22 +43,22 @@
 
 
 .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
-	color: #ef7e93;
-	text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  color: #ef7e93;
+  text-decoration: underline; /*code retrived from https://stackoverflow.com/questions/16839284/underline-a-tag-when-hovering*/
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 /* Add an active class to highlight the current page */
 .active {
-      padding: 1.1rem 2rem;
-    background-color: white;
-    color: white;
-    float:left;
+  padding: 1.1rem 2rem;
+  background-color: white;
+  color: white;
+  float:left;
 
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+  display: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

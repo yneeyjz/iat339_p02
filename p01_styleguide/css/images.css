@@ -39,8 +39,8 @@
 
 .feature1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/feature1.jpeg");
-    /*color overlay code from https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/*/
+  url("../img/feature1.jpeg");
+  /*color overlay code from https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/*/
   width:400px;
 }
 

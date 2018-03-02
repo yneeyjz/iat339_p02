@@ -9,10 +9,11 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/res_header.css">
+  <link rel="stylesheet" href="css/res_header.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
 </head>
 
@@ -21,146 +22,151 @@
   <header>
 
     <div class="topnav" id="myTopnav">
-      <a href="hhh_home.html" class="active"><img border="0" alt="logo" src="img/logo.png" width="150" ></a>
+      <a href="hhh_home.html" class="active"><img alt="logo" src="img/logo.png" width="150" ></a>
 
       <a href="hhh_giftbox.html" class="nav-main-item">GIFTBOX</a>
       <a href="hhh_recipes.html" class="nav-main-item">RECIPES</a>
-        <a href="hhh_menu.html" class="nav-main-item">MENU</a>
-          <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
+      <a href="hhh_menu.html" class="nav-main-item">MENU</a>
+      <a href="hhh_events.html" class="nav-main-item">EVENTS</a>
       <a href="hhh_about.html" class="nav-main-item">ABOUT</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <!--top bar code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
   </header>
 
-  <ul class="accordion">
-    <h1>Payment</h1>
-    <br>
-    <li>
-      <a href="#shipping" class="accordion-header">Customer Information</a>
-      <div class="accordion-content" id="shipping">
-        <form>
-          <br><br>
+  <div class="containter">
 
-          Name: <br>
-          <input type="text" name="name" placeholder="Firstname Lastname">
-          <br>
-          <br>
-          Email: <br>
-          <input type="text" name="email" placeholder="xxxxx@xxxxx.xxx">
-          <br>
-          <br>
-          Address: <br>
-          <input type="text" name="address" placeholder="address">
-          <br><br>
-          Postal Code: <br>
-          <input type="text" name="postalcode" placeholder="A1A 1A1">
-          <br><br>
+    <div class="container">
+      <h1>Payment</h1>
 
-        </form>
-        <br>
-        <a href="#billing" class="proceed_button">Next</a>
-      </div>
-    </li>
-
-    <li>
-      <a href="#billing" class="accordion-header">Billing</a>
-      <div class="accordion-content" id="billing">
-        <br><br>
-        <form>
-            Is billing address same as above?<br>
-        <input type="radio"  name="billing" value="yes" checked>Yes</input>
-        <input type="radio" name="billing" value="no">No</input>
-      </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
-
-        <form>
-          <br>
-          <br>
-          Name: <br>
-          <input type="text" name="name" placeholder="Firstname Lastname">
-          <br>
-          <br>
-
-          Address: <br>
-          <input type="text" name="address" placeholder="address">
-          <br><br>
-
-          Postal Code: <br>
-          <input type="text" name="postalcode" placeholder="A1A 1A1">
-          <br><br>
-        </form>
-        <br>
-        <a href="#payment" class="proceed_button">Next</a>
-      </div>
-    </li>
-
-  <li>
-    <a href="#payment" class="accordion-header">Payment</a>
-    <div class="accordion-content" id="payment">
-      <form>
-        <br><br>
-          Card type:<br>
-      <input type="radio"  name="card" value="visa" checked>Visa</input>
-      <input type="radio" name="card" value="mastercard">MasterCard</input>
-        <input type="radio" name="card" value="americanexpress">AmericanExpress</input>
-
-    </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
-
-      <form>
-        <br>
-        Name on Card: <br>
-        <input type="text" name="creditcard" placeholder="Firstname Lastname">
-        <br>
-        <br>
-        Card Number: <br>
-        <input type="text" name="cardnumber" placeholder="#### #### #### ####">
-        <br>
-        <br>
-        Expiration date: <br>
-        <input type="text" name="expirationdate" placeholder="MM/YY">
-        <br><br>
-        Security Code: <br>
-        <input type="password" name="securitycode" placeholder="###">
-        <br><br>
-      </form>
-      <br>
-      <a href="hhh_review.html" class="proceed_button">Proceed</a>
     </div>
-  </li>
-</ul>
+    <ul class="accordion">
 
-<footer>
+      <li>
+        <a href="#shipping" class="accordion-header">Customer Information</a>
+        <div class="accordion-content" id="shipping">
+          <form>
+            <br><br>
+
+            Name: <br>
+            <input type="text" name="name" placeholder="Firstname Lastname">
+            <br>
+            <br>
+            Email: <br>
+            <input type="text" name="email" placeholder="xxxxx@xxxxx.xxx">
+            <br>
+            <br>
+            Address: <br>
+            <input type="text" name="address" placeholder="address">
+            <br><br>
+            Postal Code: <br>
+            <input type="text" name="postalcode" placeholder="A1A 1A1">
+            <br><br>
+
+          </form>
+          <br>
+          <a href="#billing" class="proceed_button">Next</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#billing" class="accordion-header">Billing</a>
+        <div class="accordion-content" id="billing">
+          <br><br>
+          <form>
+            Is billing address same as above?<br>
+            <input type="radio"  name="billing" value="yes" checked>Yes<br>
+            <input type="radio" name="billing" value="no">No<br>
+          </form><!--code from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
+
+          <form>
+            <br>
+            <br>
+            Name: <br>
+            <input type="text" name="name" placeholder="Firstname Lastname">
+            <br>
+            <br>
+
+            Address: <br>
+            <input type="text" name="address" placeholder="address">
+            <br><br>
+
+            Postal Code: <br>
+            <input type="text" name="postalcode" placeholder="A1A 1A1">
+            <br><br>
+          </form>
+          <br>
+          <a href="#payment" class="proceed_button">Next</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#payment" class="accordion-header">Payment</a>
+        <div class="accordion-content" id="payment">
+          <form>
+            <br><br>
+            Card type:<br>
+            <input type="radio"  name="card" value="visa" checked>Visa<br>
+            <input type="radio" name="card" value="mastercard">MasterCard<br>
+            <input type="radio" name="card" value="americanexpress">AmericanExpress<br>
+
+          </form><!--cide from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio-->
+
+          <form>
+            <br>
+            Name on Card: <br>
+            <input type="text" name="creditcard" placeholder="Firstname Lastname">
+            <br>
+            <br>
+            Card Number: <br>
+            <input type="text" name="cardnumber" placeholder="#### #### #### ####">
+            <br>
+            <br>
+            Expiration date: <br>
+            <input type="text" name="expirationdate" placeholder="MM/YY">
+            <br><br>
+            Security Code: <br>
+            <input type="password" name="securitycode" placeholder="###">
+            <br><br>
+          </form>
+          <br>
+          <a href="hhh_review.html#info_review" class="proceed_button">Proceed</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <footer>
 
     <div class="box">
-    <div class="footer">
+      <div class="footer">
 
-    <p>890 Westminster Road<br>
-    Vancouver, BC V1B 1C2</p>
-    <p>contact: hello@hhh.com<br>
-    t: 604 809 0990<br>
-    e: hello@hhh.com</p>
-    </div>
-
-    <div class="footer">
-      <a href="" class="footer_link">About</a>
-      <a href="" class="footer_link">Menu</a>
-      <a href="" class="footer_link">Giftbox</a>
-      <a href="" class="footer_link">Recipes</a>
-
-    </div>
-
-    <div class="footer">
-    <p>contact: hello@hhh.com</p>
-    </div>
+        <p>890 Westminster Road<br>
+          Vancouver, BC V1B 1C2</p>
+          <p>contact: hello@hhh.com<br>
+            t: 604 809 0990<br>
+            e: hello@hhh.com</p>
+          </div>
 
 
-    </div>
+          <div class="footer">
+            <a href="hhh_home.html" class="footer_link">Home</a>
+            <a href="https://github.com/yneeyjz/iat339_p02" class="footer_link">Github</a>
+            <a href="styleguide.html" class="footer_link">Styleguide</a>
+            <a href="citation.html" class="footer_link">Citations</a>
+          </div>
+
+          <div class="footer">
+            <p>About us</p>
+            <p>Gioia Handcraft House is an online store that delivers homemade-style pasta, pastry, as well as jam products, aiming to provide more variety to food lovers who value nutrients in their cuisines for their loved ones.</p>
+          </div>
 
 
+        </div>
 
-</footer>
-  <script src="js/hamburger.js"></script>
 
-</body>
+      </footer>
+      <script src="js/hamburger.js"></script>
 
-</html>
+    </body>
+
+    </html>

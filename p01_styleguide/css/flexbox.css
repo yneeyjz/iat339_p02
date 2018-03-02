@@ -77,23 +77,23 @@
 
 /**/
 .main{
- flex: 30 1 15em;
+  flex: 30 1 15em;
 }
 
 .box-interactive{
- flex: 2 1 15em;
+  flex: 2 1 15em;
 }
 
 .box-textstyling{
- flex: 2 1 15em;
+  flex: 2 1 15em;
 }
 
 .box-feature{
- flex: 1 1 15em;
+  flex: 1 1 15em;
 }
 
 .recipes-category{
- flex: 1 1 15em;
+  flex: 1 1 15em;
 }
 
 .footer{

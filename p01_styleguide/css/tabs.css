@@ -11,7 +11,7 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
 
 }
 
-.tabs: after {
+.tabs:after {
   content: "";
   clear: both;
   display: block;
@@ -34,7 +34,7 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
   height: 30px;
   line-height: 30px;
   padding: 0.5rem 1rem;
-  background-color: #white;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ code from https://www.youtube.com/watch?v=hlQQUmi76jc */
 /* hide scrollbar
 code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* function */
@@ -99,7 +99,7 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
 }
 
 /* a.accordion-header:active {
-  background-color: #FFFDF4;
+background-color: #FFFDF4;
 } */
 
 .accordion-content {
@@ -111,7 +111,7 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
   -webkit-transition:height 400ms ease;
   transition:height 400ms ease;
   width: 100%;
-    padding-left:2rem;
+  padding-left:2rem;
 
 
 }
@@ -126,7 +126,7 @@ code from https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while
 .accordion-content:target {
   height: 520px;
   background-color: white;
-  border: 1.5 solid #ef7e93;
+
   overflow-y: scroll;
   width: 100%;
 }
